@@ -1,0 +1,18 @@
+@import 'config';
+
+* {
+  margin:0;
+  border:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:$main-font;
+}
+
+body {
+  background:$white-mode-body;
+  width:100vw;
+}
+
+@import 'header';
+
+@import 'footer';

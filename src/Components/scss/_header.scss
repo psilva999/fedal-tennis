@@ -1,0 +1,12 @@
+@import 'config';
+
+header {
+  background:$white-mode-header;
+  width:100vw;
+  border-radius:0 0 1.3rem 0;
+  box-shadow:$baixo-divisor;
+  padding:1rem 2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
