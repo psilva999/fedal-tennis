@@ -3,10 +3,77 @@
 header {
   background:$white-mode-header;
   width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:3;
   border-radius:0 0 1.3rem 0;
   box-shadow:$baixo-divisor;
-  padding:1rem 2rem;
+  padding:.3rem 2rem .2rem 2rem;
   display:flex;
   justify-content:center;
   align-items:center;
+  gap:28.6rem;
+
+  #toggle-menu, .store {
+    cursor:pointer;
+  }
+
+  nav {
+    margin-left:.9rem;
+  }
+
+  #toggle-menu {
+    height:2rem;
+    background:none;
+
+    div {
+      background:$menu-gradient;
+      width:1.7rem;
+      height:.19rem;
+      border-radius:0 0 .2rem 0;
+      margin-top:-.5rem;
+
+      &:after {
+        content:'';
+        position:absolute;
+        background:$menu-gradient;
+        width:1.7rem;
+        height:.19rem;
+        border-radius:0 0 .2rem 0;
+        margin-top:.6rem;
+        margin-left:-1.4rem;
+        transform:rotate(180deg);
+      }
+    }
+  }
+
+  .logo {
+    height:2.7rem;
+  }
+
+  .store {
+    height:1.7rem;
+    margin-top:-.2rem;
+    opacity:.8;
+    transition:.3s;
+  }
+
+  .store:hover {
+    opacity:1;
+    transition:.3s;
+  }
+}
+
+@media (max-width:73rem) {
+  header {
+    justify-content:space-between;
+    gap:0;
+  }
+}
+
+@media (max-width:31.25rem) {
+  header {
+    padding:.3rem .8rem .2rem .8rem;
+  }
 }

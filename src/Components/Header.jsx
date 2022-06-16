@@ -1,13 +1,20 @@
 import React from 'react'
 
+import Logo from '../Assets/svg/0-logo.svg'
+import Store from '../Assets/svg/1-buy.svg'
+
 const Header = () => {
   return (
     <header>
       <nav>
-        menu
+        <button id='toggle-menu'>
+          <div></div>
+        </button>
       </nav>
 
-      
+      <img src={ Logo } className='logo'/>
+
+      <img src={ Store } className='store'/>
     </header>
   )
 }
