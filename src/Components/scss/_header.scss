@@ -50,15 +50,16 @@ header {
   }
 
   .menu.active {
-    background:#E2E2E2;
+    background:$main-white-background;
     position:fixed;
     top:4rem;
-    left:6rem;
+    left:5.5rem;
     box-shadow:$baixo-lado-divisor;
     border-radius:.2rem;
-    padding:1rem 1.3rem;
+    padding:1rem 2rem;
     list-style:none;
     display:grid;
+    justify-content:center;
     gap:1.3rem;
     font-size:1rem;
     text-align:right;
@@ -127,6 +128,62 @@ header {
           animation:show-detail .3s forwards;
         }
       }
+    }
+  }
+
+  .switch-container {
+    background:none;
+    width:3rem;
+    height:.2rem;
+    margin-left:.7rem;
+    margin-top:1.2rem;
+
+    .switch-shadow {
+      position:absolute;
+      margin-top:-1rem;
+      margin-left:-1.5rem;
+      opacity:.4;
+      visibility:hidden;
+      user-select:none;
+      outline:none;
+    }
+
+    .switch-shadow + label {
+      cursor:pointer;
+    }
+
+    .switch-shadow + label:before,
+    .switch-shadow + label:after {
+      width:2.5rem;
+      height:1rem;
+      display:block;
+      margin-top:-1rem;
+      content:'';
+    }
+
+    .switch-shadow + label:before {
+      background:$switch-white-mode;
+      box-shadow:$baixo-lado-exposto;
+      border-radius:.7rem;
+      transition:all .5s;
+      right:1px;
+    }
+
+    .switch-shadow + label:after {
+      background:#ECECEC;
+      border-radius:1rem;
+      width:1rem;
+      height:1rem;
+      margin-top:-1rem;
+      transition:all .6s;
+    }
+
+    .switch-shadow:checked + label:before {
+      background:$switch-dark-mode;
+    }
+
+    .switch-shadow:checked + label:after {
+      transform:translateX(1.6rem);
     }
   }
 
