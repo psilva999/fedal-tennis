@@ -6,10 +6,17 @@ import Store from '../Assets/svg/1-buy.svg'
 const Header = () => {
   return (
     <header>
+
       <nav>
         <button id='toggle-menu'>
           <div></div>
-        </button>
+        </button>  
+
+        <ul className='menu active'>
+          <li className='detail'>home</li>
+          <li>contato</li>
+          <li>news</li>
+        </ul>
       </nav>
 
       <img src={ Logo } className='logo'/>

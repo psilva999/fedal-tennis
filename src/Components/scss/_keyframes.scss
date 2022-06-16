@@ -1,0 +1,19 @@
+@keyframes show-detail {
+  from {
+    width:0;
+  }
+
+  to {
+    width:1rem;
+  }
+}
+
+@keyframes hide-detail {
+  from {
+    width:1rem;
+  }
+
+  to {
+    width:0rem;
+  }
+}
