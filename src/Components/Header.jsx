@@ -6,8 +6,6 @@ import Store from '../Assets/svg/1-buy.svg'
 import { darkAndWhiteMode } from './Events/darkAndWhiteMode.js'
 
 const Header = () => {
-
-
   return (
     <header>
 
