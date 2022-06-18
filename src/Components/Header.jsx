@@ -3,26 +3,30 @@ import React from 'react'
 import Logo from '../Assets/svg/0-logo.svg'
 import Store from '../Assets/svg/1-buy.svg'
 
+import { handleMenu, closeMenuFromOutside } from './Events/handleMenu.js'
 import { darkAndWhiteMode } from './Events/darkAndWhiteMode.js'
 
 const Header = () => {
+  document.body.addEventListener('click', closeMenuFromOutside)
+
   return (
     <header>
 
       <nav>
-        <button id='toggle-menu'>
-          <div></div>
+        <button id='toggle-menu' className='toggle-menu'
+        onClick={ handleMenu }>
+          <div id='gambiarraPraFecharMenu'></div>
         </button>  
 
-        <ul className='menu active'>
-          <li className='detail'>home</li>
+        <ul className='menu' id='menu'>
+          <li className='detail' id='detail'>home</li>
           <li>contato</li>
           <li>news</li>
 
-          <button class="switch-container" 
+          <button id="switch-container" 
           onClick={ darkAndWhiteMode }>
-            <input type="checkbox" class="switch-shadow"/>
-            <label for="button"></label>
+            <input type="checkbox" class="switch-shadow" id='switch-input'/>
+            <label for="button" id='switch-label'></label>
           </button>
 
         </ul>

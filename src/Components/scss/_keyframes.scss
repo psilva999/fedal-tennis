@@ -1,3 +1,27 @@
+@keyframes show-menu {
+  from {
+    transform:translateX(-2rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes hide-menu {
+  from {
+    transform:translateX(0rem);
+    opacity:1;
+  }
+
+  to {
+    transform:translateX(-2rem);
+    opacity:0;
+  }
+}
+
 @keyframes show-detail {
   from {
     width:0;
@@ -15,5 +39,28 @@
 
   to {
     width:0rem;
+  }
+}
+
+@keyframes show-menu-detail-after {
+  from {
+    transform:translateX(2rem);
+  }
+
+  to {
+    transform:translateX(0rem);
+    opacity:1;
+  }
+}
+
+@keyframes hide-menu-detail-after {
+  from {
+    transform:translateX(0);
+    opacity:1;
+  }
+
+  to {
+    transform:translateX(2rem);
+    opacity:0;
   }
 }
