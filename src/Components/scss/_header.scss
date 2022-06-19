@@ -148,6 +148,7 @@ header {
           animation:show-detail .3s forwards;
         }
       }
+      
     }
   }
 
@@ -216,11 +217,12 @@ header {
     margin-top:-.2rem;
     opacity:.8;
     transition:.3s;
-  }
 
-  .store:hover {
-    opacity:1;
-    transition:.3s;
+    &:hover {
+      opacity:1;
+      transition:.3s;
+      transform:scale(1.1);
+    }
   }
 }
 
@@ -245,6 +247,10 @@ header {
 
 @media (max-width:31.25rem) {
   header {
-    padding:.3rem .8rem .2rem .8rem;
+    padding:.3rem 2rem .2rem .8rem;
+
+    .store:hover {
+      transform:none;
+    }
   }
 }

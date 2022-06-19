@@ -64,3 +64,25 @@
     opacity:0;
   }
 }
+
+@keyframes muda-texto {
+  0% {
+    content:'STYLE';
+  }
+
+  25% {
+    content:'SPIRIT';
+  }
+
+  50% {
+    content:'AUDACITY';
+  }
+
+  75% {
+    content:'ELEGANCE';
+  }
+
+  100% {
+    content:'STYLE';
+  }
+}

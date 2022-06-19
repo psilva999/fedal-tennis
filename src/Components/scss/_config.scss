@@ -12,7 +12,17 @@ $baixo-divisor:1px 3px 3px -2px rgba(39,39,39,.4);
 $baixo-lado-divisor:3px 2px 4px -2px rgba(39,39,39,.4);
 $baixo-lado-exposto:1px 1px 1px 1px rgba(39, 39, 39, 0.66);
 
+$nevoa-branca:0px 10px 5px -6px rgba(226,226,226,.44);
+
 $main-black:#272727;
 
 $switch-white-mode:linear-gradient(45deg, #F24B28 70%, #272727 90%);
 $switch-dark-mode:linear-gradient(40deg, #F24B28 1%, #272727 50%);
+
+$polygon-esquerdo-discreto:polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+
+$polygon-ponta-dupla:polygon(100% 0, 100% 100%, 50% 71%, 0 100%, 0 0);
+$polygon-ponta-unica:polygon(100% 0, 100% 100%, 0 46%, 0 0);
+
+$polygon-bloco-maior:polygon(100% 0, 90% 100%, 0 100%, 0 0);
+$alvorada:linear-gradient(90deg, #272727 30%, #F24B28 100%);
