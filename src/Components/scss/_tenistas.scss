@@ -1,0 +1,63 @@
+@import 'config';
+
+.tenistas {
+  margin:7rem auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:17rem;
+  padding:0 .35rem .5rem .25rem;
+  border-radius:.2rem .2rem 1rem .2rem;
+  background:$outside-gradient;
+  box-shadow:$sombra-baixa-direita;
+
+  button {
+    background:none;
+    cursor:pointer;
+    display:grid;
+    place-items:center;
+    gap:.3rem;
+    margin-top:-1rem;
+    font-weight: bold;
+    letter-spacing:.1rem;
+    transition:.3s;
+
+    &:hover {
+      transition:.3s;
+
+      .efeito-stories {
+        transition:.3s;
+        transform:translateY(-.5rem);
+      }
+
+      span {
+        transition:.3s;
+        opacity:.7;
+      }
+    }
+  }
+
+  .efeito-stories {
+    padding:.2rem;
+    background:$stories-effect;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    transition:.3s;
+  }
+
+  span {
+    transition:.3s;
+    opacity:.5;
+  }
+}
+
+@media (max-width:32rem) {
+  .tenistas {
+    button:hover {
+      .efeito-stories {
+        transform:none;
+      }
+    }
+  }
+}
