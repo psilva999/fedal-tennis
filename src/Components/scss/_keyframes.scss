@@ -65,6 +65,26 @@
   }
 }
 
+@keyframes hide-loading {
+  from {
+    background-position:100% 0%;
+  }
+
+  to {
+    background-position:0% 0%;
+  }
+}
+
+@keyframes show-loading {
+  0% {
+    background-position:0% 0%;
+  }
+
+  to {
+    background-position:100% 0%;
+  }
+}
+
 @keyframes muda-texto {
   0% {
     content:'STYLE';
