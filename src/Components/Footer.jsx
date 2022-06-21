@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { handleSubmit } from './Events/handleSubmit.js'
+import { changeInput, handleSubmit, regexEmail } from './Events/handleSubmit.js'
 
 import Racket from '../Assets/svg/3-racket.svg'
 import ClosedEmail from '../Assets/svg/4-email-close.svg'
@@ -44,10 +44,11 @@ const Footer = () => {
               type='email' 
               placeholder='E-mail' 
               id='email' 
-              name='user_email'/>
+              name='user_email'
+              onChange={ changeInput }/>
 
-            <button>
-              <img src={ ClosedEmail } alt='enviar'/>
+            <button type='submit' onClick={ regexEmail } className='send-email'>
+              <img src={ ClosedEmail } alt='enviar' id='button-image'/>
             </button>
 
           </form>

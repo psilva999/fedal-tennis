@@ -91,12 +91,16 @@ footer {
       border-radius:0 .3rem .3rem 0;
       cursor:pointer;
       transition:.6s;
+      width:4rem !important;
 
       &:hover {
         transition:.6s;
         --x:30%;
       }
 
+      &.checked {
+        --x:70%;
+      }
     }
   }
 
@@ -178,14 +182,13 @@ footer {
 
 .email-enviado {
   display:none;
-  right:.5rem;
 }
 
 .email-enviado.active {
   position:fixed;
   top:5rem;
+  right:.5rem;
   height:2.9rem;
-  
   display:block;
   gap:.5rem;
   border-radius:.3rem;
@@ -198,7 +201,7 @@ footer {
   .duracao-mensagem {
     float:right;
     margin-top:.5rem;
-    animation: retira-mensagem 4s linear forwards;
+    animation: retira-mensagem 6s linear forwards;
     height:.2rem;
     background:$alaranjado;
   }
