@@ -67,7 +67,7 @@
 
 @keyframes hide-loading {
   from {
-    background-position:100% 0%;
+    background-position:200% 0%;
   }
 
   to {
@@ -81,7 +81,40 @@
   }
 
   to {
-    background-position:100% 0%;
+    background-position:150% 0%;
+  }
+}
+
+@keyframes email-enviado {
+  from {
+    transform:translateX(-3rem);
+    opacity:.0;
+  }
+
+  to {
+    transform:translateX(0rem);
+    opacity:1;
+  }
+}
+
+@keyframes retira-mensagem {
+  from {
+    width:90%;
+  }
+
+  to {
+    width:0%;
+  }
+}
+
+@keyframes escurece-mensagem {
+  from {
+    opacity:1;
+    right:.5rem;
+  }
+
+  to {
+    opacity:0;
   }
 }
 

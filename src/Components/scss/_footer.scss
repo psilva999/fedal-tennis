@@ -96,6 +96,7 @@ footer {
         transition:.6s;
         --x:30%;
       }
+
     }
   }
 
@@ -172,6 +173,34 @@ footer {
       }
     }
 
+  }
+}
+
+.email-enviado {
+  display:none;
+  right:.5rem;
+}
+
+.email-enviado.active {
+  position:fixed;
+  top:5rem;
+  height:2.9rem;
+  
+  display:block;
+  gap:.5rem;
+  border-radius:.3rem;
+  padding:.5rem 1rem;
+  font-size:.9rem;
+  color:$main-white-background;
+  background:$anoitecer;
+  animation:email-enviado .3s linear forwards;
+
+  .duracao-mensagem {
+    float:right;
+    margin-top:.5rem;
+    animation: retira-mensagem 4s linear forwards;
+    height:.2rem;
+    background:$alaranjado;
   }
 }
 

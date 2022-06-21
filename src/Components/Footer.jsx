@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { handleSubmit } from './Events/handleSubmit.js'
+
 import Racket from '../Assets/svg/3-racket.svg'
 import ClosedEmail from '../Assets/svg/4-email-close.svg'
 
@@ -12,6 +14,7 @@ import Wimbledon from '../Assets/images/3-wimbledon.png'
 
 const Footer = () => {
   return (
+    <>
     <footer>
       <img src={ Racket } alt='Raquete de tênis' className='racket'/>
 
@@ -36,7 +39,7 @@ const Footer = () => {
           <h1>Quer saber mais novidades?</h1>
           <span>Inscreva-se na nossa Newsletter</span>
 
-          <form>
+          <form onSubmit={ handleSubmit }>
             <input 
               type='email' 
               placeholder='E-mail' 
@@ -46,6 +49,7 @@ const Footer = () => {
             <button>
               <img src={ ClosedEmail } alt='enviar'/>
             </button>
+
           </form>
         </div>
 
@@ -85,6 +89,12 @@ const Footer = () => {
         <img src={ Wimbledon } alt='wimbledon' className='wimbledon'/>
       </div>
     </footer>
+
+    <div className='email-enviado'>
+      E-mail enviado
+      <span className='duracao-mensagem'></span>
+    </div>
+    </>
   )
 }
 
