@@ -11,3 +11,5 @@ ___
 `npm install`
 
 `npm run dev`
+
+`npm i emailjs-com` -- para instalar o emailjs

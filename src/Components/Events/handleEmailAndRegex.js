@@ -30,7 +30,10 @@ export function regexEmail() {
         tempo = 6
 
     if (!button.classList.contains('checked')) {
+      email.disabled = true
+      email.style.cursor = 'initial'
       button.classList.add('checked')
+
       img.src = `${ Checked }`
       img.style.animation = 'show-checked .5s linear forwards'
       mensagemDeEmailEnviado.classList.add('active')
@@ -53,8 +56,4 @@ export function regexEmail() {
     }
 
   }
-}
-
-export function handleSubmit(e) {
-  e.preventDefault()
 }

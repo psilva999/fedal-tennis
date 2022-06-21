@@ -1,6 +1,7 @@
 import React from 'react'
+import emailjs from 'emailjs-com'
 
-import { changeInput, handleSubmit, regexEmail } from './Events/handleSubmit.js'
+import { changeInput, regexEmail } from './Events/handleEmailAndRegex.js'
 
 import Racket from '../Assets/svg/3-racket.svg'
 import ClosedEmail from '../Assets/svg/4-email-close.svg'
@@ -13,6 +14,23 @@ import RolandGarros from '../Assets/images/2-roland-garros.png'
 import Wimbledon from '../Assets/images/3-wimbledon.png'
 
 const Footer = () => {
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    emailjs.sendForm(
+      'service_4ii5zzr', 
+      'template_db5en8l', 
+      e.target, 
+      'GMgIzGOatYerTDpnQ')
+      .then(res => {
+        console.log(res) 
+      })
+      
+      .catch(err => {
+        console.log(err)
+    })
+  }
+
   return (
     <>
     <footer>
