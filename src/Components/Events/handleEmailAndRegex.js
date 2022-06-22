@@ -43,9 +43,11 @@ export function regexEmail() {
       function countdown() {
         tempo--
 
-        if (tempo === 2) {
+        if (tempo === 3) 
+          button.disabled = true
+
+        if (tempo === 2)
           mensagemDeEmailEnviado.style.animation = 'escurece-mensagem 2s linear forwards'
-        }
 
         if (tempo === 0) {
           mensagemDeEmailEnviado.classList.remove("active")

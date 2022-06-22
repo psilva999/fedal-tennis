@@ -19,7 +19,7 @@ const Footer = () => {
 
     emailjs.sendForm(
       'service_4ii5zzr', 
-      'template_db5en8l', 
+      'template_2mw2h9j', 
       e.target, 
       'GMgIzGOatYerTDpnQ')
       .then(res => {
