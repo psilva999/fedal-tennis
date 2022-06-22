@@ -9,7 +9,7 @@ footer {
   padding:0 4rem 9rem 4rem;
   display:grid;
   place-items:center;
-  gap:2.5rem;
+  gap:5rem;
   color:$main-white-background;
 
   .racket {
@@ -63,7 +63,7 @@ footer {
 
   .newsletter {
     width:17rem;
-    margin-left:4rem;
+    margin-left:3rem;
 
     input {
       background:$main-white-background;
@@ -136,7 +136,7 @@ footer {
     height:.1rem;
     background:$main-white-background;
     opacity:.4;
-    margin-top:6rem;
+    margin-top:1rem;
     margin-left:-1rem;
   }
 
@@ -145,7 +145,7 @@ footer {
     justify-content:space-between;
     align-items:top;
     width:60rem;
-    margin-top:8rem;
+    margin-top:4rem;
     margin-left:-6.5rem;
 
     .move-the-lines {
@@ -210,7 +210,7 @@ footer {
 
 @media (max-width:73.2rem) {
   footer {
-    gap:2rem;
+    gap:4rem;
     padding-left:4rem;
     padding-right:4rem;
 
@@ -231,6 +231,7 @@ footer {
 @media (max-width:60rem) {
   footer {
     padding:1rem 0 7rem 0;
+    gap:1rem;
 
     .container, .patrocinadores {
       width:max-content;
