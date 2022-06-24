@@ -26,7 +26,9 @@ const Federer = () => {
 
       <article className='apresentacao'>
         <p>
-          Um dos maiores vencedores de Grand Slams na história do circuito masculino de tênis, ao lado de Rafael Nadal. Recordista de semanas como o número 1 do mundo no ranking da ATP. Dono de duas medalhas em Jogos Olímpicos. Todas essas informações dizem respeito a um tenista: o suíço Roger Federer.  
+          Um dos maiores vencedores de Grand Slams na história do circuito masculino de tênis, ao lado de Rafael Nadal. Recordista de semanas como o número 1 do mundo no ranking da ATP. Dono de duas medalhas em Jogos Olímpicos. Todas essas informações 
+          <a className='background-detail off'>
+            dizem respeito a um tenista: o suíço Roger Federer.</a>  
         </p>
 
         <img src={ FedererRacket } alt='Federer jogando' className='federer-racket'/>
@@ -39,12 +41,17 @@ const Federer = () => {
 
       <article className='historia'> <h1>Uma das lendas do Tênis</h1>
         <p>
-          Nascido na Basileia, na Suíça, em 8 de agosto de 1981, Federer começou a jogar tênis aos oito anos e, durante sua adolescência, chegou a ser número 1 do mundo no ranking mundial de tenistas juvenis. Antes de se tornar profissional, ele venceu o torneio de Wimbledon juvenil em simples e em duplas em 1998.
+          Nascido na Basileia, na Suíça, em 8 de agosto de 1981, Federer começou a jogar tênis aos oito anos e, durante sua adolescência, 
+          <a className='background-detail off'>
+            chegou a ser número 1 do mundo </a> 
+          no ranking mundial de tenistas juvenis. Antes de se tornar profissional, ele venceu o torneio de Wimbledon juvenil em simples e em duplas em 1998.
         </p>
 
         <p>
           O suíço ainda é o tenista com mais tempo no topo do ranking da ATP: 310 semanas como número 1 do mundo, entre 2004 e 2018.
-          Em fevereiro de 2018, com 36 anos e meio, tornou-se o tenista mais velho a assumir o topo do ranking da ATP.
+          Em fevereiro de 2018, com 36 anos e meio, 
+          <a className='background-detail off'>
+            tornou-se o tenista mais velho a assumir o topo do ranking da ATP.</a>
         </p>
 
         <q className='data-quote-container'>
@@ -65,7 +72,9 @@ const Federer = () => {
 
         <div>
           <p>
-            O saque do 'Swiss Maestro' é um de seus pontos mais fortes, sendo considerado eficaz tanto no fundo da quadra quanto no voleio.
+            <a className='background-detail off'>
+              O saque do 'Swiss Maestro' </a>
+            é um de seus pontos mais fortes, sendo considerado eficaz tanto no fundo da quadra quanto no voleio.
           </p>
 
           <p>
@@ -73,7 +82,7 @@ const Federer = () => {
           </p>
 
           <p>
-            Depois do seu início de carreira, Roger passou a ser caracterizado pela sua falta de explosões ou frustração emocional quando comete erros, o que lhe dá uma vantagem sobre os adversários menos controlados
+            Depois do seu início de carreira, Roger passou a ser caracterizado pela sua falta de explosões ou frustração emocional quando comete erros, o que <a className='background-detail off'>lhe dá uma vantagem sobre os adversários menos controlados.</a>
           </p>
         </div>
 

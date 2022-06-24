@@ -16,6 +16,23 @@ body {
   left:0;
   overflow-y:auto;
   overflow-x:hidden;
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
+
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$main-black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$gradient-scrollbar;
+    background:$gradient-scrollbar;
+    border-radius:0 0 0 .1rem;
+    border:.375rem solid $gradient-scrollbar;
+  }
 }
 
 @import 'header';
