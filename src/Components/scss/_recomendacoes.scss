@@ -1,0 +1,71 @@
+@import 'config';
+@import 'keyframes';
+
+.recomendacoes {
+  margin-top:9rem;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+
+  #divisor {
+    position:absolute;
+    content: '';
+    position:absolute;
+    margin:-4.5rem auto auto 1.3rem;
+    width:5rem;
+    height:.1rem;
+    background:$main-black;
+    opacity:.2;
+  }
+
+  a {
+    display:grid;
+    text-decoration:none;
+
+    &:hover {
+      img {
+        transition:.3s;
+        box-shadow:none;
+      }
+
+      figcaption {
+        animation:none;
+      }
+    }
+  }
+
+  img {
+    box-shadow:$sombra-do-corpo;
+    transition:.3s;
+  }
+
+  figcaption {
+    position:relative;
+    text-align:center;
+    font-size:1.1rem;
+  }
+
+  .doc {
+    figcaption {
+      background:$main-white-background;
+      width:100%;
+      top:-17.8rem;
+      padding:.5rem 0;
+      color:$main-black;
+    }
+  }
+
+  .ao-vivo {
+    figcaption {
+      background:$main-title-content;
+      opacity:.7;
+      top:-17.2rem;
+      justify-self:center;
+      padding:.2rem .6rem .3rem .6rem;
+      border-radius:.2rem;
+      margin-left:-18rem;
+      color:$main-white-background;
+      animation:live 2.1s linear infinite;
+    }
+  }
+}
