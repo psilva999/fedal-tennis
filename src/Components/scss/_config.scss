@@ -29,5 +29,24 @@ $polygon-ponta-unica:polygon(100% 0, 100% 100%, 0 46%, 0 0);
 $polygon-bloco-maior:polygon(100% 0, 90% 100%, 0 100%, 0 0);
 $alvorada:linear-gradient(90deg, #272727 30%, #F24B28 100%);
 
-$sombra-baixa-direita:2px 2px 6px 0px rgba(39,39,39,.4);
-$outside-gradient:linear-gradient(0deg, rgba(226, 226, 226, 1) 0%,rgba(226, 226, 226, 0) 100%);
+$sombra-baixa-direita:1px 1px 3px 0px rgba(39,39,39,.3);
+$outside-gradient:linear-gradient(45deg, rgba(226, 226, 226, 1) 0%,rgba(226, 226, 226, 0) 70%);
+
+$main-title-content:linear-gradient(45deg, #FF4F2B 0%, #272727 90%);
+
+$white-mode-gradient:linear-gradient(0deg, rgba(226, 226, 226, 0) 0%, rgba(226, 226, 226, .6) 20%);
+
+$amanhecer:linear-gradient(343deg, rgba(39, 39, 39, 1) 85%, rgba(255, 79, 43, 1) 100%);
+
+$sombra-discreta:4px -3px 2px -2px rgba(39, 39, 39, .2);
+$sombra-sutil:8px 5px 5px -3px rgba(39, 39, 39, .4);
+
+$light-to-dark:linear-gradient(45deg, #E2E2E2 50%, transparent 100%);
+
+$light-data: linear-gradient(45deg, #E2E2E2 85%, transparent 100%);
+
+$light-to-little-dark:linear-gradient(0deg,
+rgba(39, 39, 39, 0) 0%,
+rgba(226, 226, 226, 1) 40%);
+
+$sombra-exuberante:10px 10px 5px 0px rgba(39, 39, 39, .5);

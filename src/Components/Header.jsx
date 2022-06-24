@@ -10,7 +10,7 @@ const Header = () => {
   document.body.addEventListener('click', closeMenuFromOutside)
 
   return (
-    <header>
+    <header className='header-fixo'>
 
       <nav>
         <button id='toggle-menu' className='toggle-menu'

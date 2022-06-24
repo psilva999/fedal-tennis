@@ -1,7 +1,7 @@
 @import 'config';
 @import 'keyframes';
 
-header {
+.header-fixo {
   background:$white-mode-header;
   width:100vw;
   position:fixed;
@@ -239,14 +239,14 @@ header {
 }
 
 @media (max-width:73rem) {
-  header {
+  .header-fixo {
     justify-content:space-between;
     gap:0;
   }
 }
 
 @media (max-width:31.25rem) {
-  header {
+  .header-fixo {
     padding:.3rem 2rem .2rem .8rem;
 
     .store:hover {
