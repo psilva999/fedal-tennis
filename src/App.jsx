@@ -15,6 +15,7 @@ import { marcaTexto } from './Components/Events/marcaTexto'
 import { escreveFrase } from './Components/Events/escreveFrase'
 
 import { mostraConquistas, contaConquistas, mostraFatos } from './Components/Events/mostraDados'
+import { barraDeProgresso } from './Components/Events/barraDeProgresso'
 
 function App() {
   marcaTexto()
@@ -23,21 +24,25 @@ function App() {
   window.addEventListener('load', contaConquistas)
 
   window.addEventListener('scroll', () => { 
+    barraDeProgresso()
     marcaTexto()
+    
     escreveFrase()
     mostraFatos()
   })
 
   return (
     <>
+      <div className='linha-de-leitura'></div>
+
       <Header/>
       <main>
         <Tenistas/>
 
         <section className='content'>
           {/* <Federer/> */}
-          <Guga/>
-          {/* <Nadal/> */}
+          {/* <Guga/> */}
+          <Nadal/>
 
           <Recomendacoes/>
         </section>

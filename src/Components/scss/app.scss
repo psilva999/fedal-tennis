@@ -33,6 +33,17 @@ body {
     border-radius:0 0 0 .1rem;
     border:.375rem solid $gradient-scrollbar;
   }
+
+  .linha-de-leitura {
+    background:$main-black;
+    background-image:$linha-de-leitura;
+    position:fixed;
+    top:0;
+    left:0;
+    width:0vw;
+    height:.2rem;
+    z-index:10;
+  }
 }
 
 @import 'header';

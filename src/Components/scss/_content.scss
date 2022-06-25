@@ -241,7 +241,7 @@
       grid-area:4 / 1 / 6 / 6;
       border-radius:0 0 0 .3rem;
       box-shadow:$sombra-sutil;
-      -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+      -webkit-clip-path:$polygon-prancha;
       clip-path:$polygon-prancha;
     }
   }

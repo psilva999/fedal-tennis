@@ -5,7 +5,7 @@
   background:$white-mode-header;
   width:100vw;
   position:fixed;
-  top:0;
+  top:.2rem;
   left:0;
   z-index:3;
   border-radius:0 0 1.3rem 0;
@@ -15,6 +15,17 @@
   justify-content:center;
   align-items:center;
   gap:28.6rem;
+
+  &:before {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:.2rem;
+    z-index:-1;
+    background:$main-black;
+  }
 
   .toggle-menu, .store {
     cursor:pointer;
@@ -71,7 +82,7 @@
   .menu.active {
     background:$main-white-background;
     position:fixed;
-    top:4rem;
+    top:4.3rem;
     left:5.5rem;
     box-shadow:$baixo-lado-divisor;
     border-radius:.2rem;

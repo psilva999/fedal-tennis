@@ -1,6 +1,6 @@
 export function escreveFrase() {
   let frase = document.querySelector('.frase i'),
-      mostraFrase = window.innerHeight + 110,
+      mostraFrase = window.innerHeight + 80,
       showTop = frase.getBoundingClientRect().top
 
   if (showTop < mostraFrase && !frase.classList.contains('active')) {

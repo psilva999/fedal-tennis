@@ -64,7 +64,7 @@ const Nadal = () => {
 
         <p>
           Em fevereiro de 2015, ao disputar o ATP 500 do Rio Open, 
-          <a className='data-quote-container frase'>
+          <a className='background-detail off'>
             Rafa Nadal desfilou no pelotão de frente da escola de samba Unidos da Viradouro</a>
           , a primeira do Grupo Especial a entrar na Marquês de Sapucaí na noite de domingo.
         </p>
