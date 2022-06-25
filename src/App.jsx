@@ -12,6 +12,8 @@ import Footer from './Components/Footer'
 import Recomendacoes from './Components/Recomendacoes'
 
 import { marcaTexto } from './Components/Events/marcaTexto'
+import { escreveFrase } from './Components/Events/escreveFrase'
+
 import { mostraConquistas, contaConquistas, mostraFatos } from './Components/Events/mostraDados'
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
 
   window.addEventListener('scroll', () => { 
     marcaTexto()
+    escreveFrase()
     mostraFatos()
   })
 

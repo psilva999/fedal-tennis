@@ -1,11 +1,11 @@
 export function mostraConquistas() {
   let mostraConquistas = setInterval(countdownConquistas, 500),
-      tempo = 3
+      tempo = 2
   
   function countdownConquistas() {
     tempo--
 
-    if (tempo === 2) 
+    if (tempo === 1) 
       document.querySelector('.grand-slams').style.animation = 'mostra-conquistas .6s linear forwards'
 
     else if (tempo === 0) {
@@ -21,21 +21,21 @@ export function contaConquistas() {
         totalTitulos = document.querySelector('.totalTitulos')
 
   let mostraNumeros = setInterval(acrescentaNumeros, 720),
-      tempo = 3,
+      tempo = 2,
 
-      acrescentaGrandSlams = setInterval(randomGrandSlam, 1),
-      acrescentaTitulos = setInterval(randomTitle, 1)
+      acrescentaGrandSlams = setInterval(randomGrandSlam, 10),
+      acrescentaTitulos = setInterval(randomTitle, 10)
 
   function acrescentaNumeros() {
     tempo--
 
-    if (tempo === 2) {
+    if (tempo === 1) {
       grandSlamsDosTenistas()
 
       clearInterval(acrescentaGrandSlams)
     }
 
-    if (tempo === 1) {
+    if (tempo === 0) {
       titulosDosTenistas()
 
       clearInterval(acrescentaTitulos)
@@ -77,14 +77,11 @@ export function contaConquistas() {
 export function mostraFatos() {
   const li = document.querySelectorAll('.fatos li'), 
 
-      mostraFatos = window.innerHeight,
+      mostraFatos = window.innerHeight + 30,
       showTop = li[1].getBoundingClientRect().top
 
-  if (showTop < mostraFatos) {
-    document.querySelector('.fatos').style.animation = 'mostra-container-fatos .3s linear forwards'
-
-    li.forEach(li => {
+  if (showTop < mostraFatos) 
+    li.forEach(li => 
       li.style.animation = 'mostra-fatos .7s linear forwards'
-    })
-  }
+    ) 
 }

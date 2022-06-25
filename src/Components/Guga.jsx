@@ -59,8 +59,15 @@ const Guga = () => {
           <i>
             O primeiro título eu não esperava. O segundo foi tão difícil que foi meio tenso. nunca nos meus melhores sonhos eu venceria pela terceira vez.
           </i>
-          
         </q>
+
+        <p>
+          Após o Grand Slam francês, se tornou bicampeão do ATP de Stuttgart, e foi semifinalista no ATP de Los Angeles (em piso hard), perdendo para Andre Agassi. Em agosto, venceu o Masters de Cincinnati (realizado em piso hard), <a className='background-detail off'>considerado um dos títulos mais difíceis e impressionantes de Kuerten, que derrotou na sequência somente grandes nomes do piso rápido.</a>
+        </p>
+
+        <p>
+          Embora declarasse não gostar de jogar na grama, e algumas vezes sequer ter participado do torneio de Wimbledon - devido à diferença entre o piso de saibro e grama ser muito grande na época, e ao fato de que Guga costumeiramente obtinha sucesso em torneios seguidos no saibro logo antes de Wimbledon, o que extenuava o atleta e também tornava desnecessário lutar por pontos na grama -, neste ano participou e foi à terceira rodada.
+        </p>
       </article>
 
       <article className='dados'>

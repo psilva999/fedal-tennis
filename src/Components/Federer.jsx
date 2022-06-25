@@ -59,6 +59,17 @@ const Federer = () => {
             Roger trouxe às quadras uma aliança raríssima de técnica, finesse, exuberância física, talento natural, disciplina, plasticidade e determinação.
           </i>
         </q>
+
+        <p>
+          É casado com a ex-tenista profissional Miroslava Vavrinec, mais conhecida como Mirka, que chegou a ser a nº 76 do ranking da WTA. 
+          <a className='background-detail off'>
+            Conheceram-se durante os Jogos Olímpicos de Verão de 2000. </a> 
+          A suíça encerrou sua carreira devido a uma contusão no tendão de Aquiles, levando-a a acompanhar a do marido, responsabilizando-se pelo seu contato com a imprensa.
+        </p>
+
+        <p>
+          Reconhecido fora das quadras como uma "excelente pessoa" e extremamente respeitado pelos adversários,possui uma organização, a Fundação Roger Federer, onde realiza suas atividades em seis países africanos, sendo um deles a África do Sul, terra natal de sua mãe.
+        </p>
       </article>
 
       <article className='dados'>

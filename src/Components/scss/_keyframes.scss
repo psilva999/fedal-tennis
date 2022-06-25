@@ -1,3 +1,5 @@
+@import 'config';
+
 @keyframes show-menu {
   from {
     transform:translateX(-2rem);
@@ -172,13 +174,15 @@
 
 @keyframes mostra-conquistas {
   from {
-    transform:translateX(2rem);
+    transform:translateX(1rem);
     opacity:0;
+    box-shadow:none;
   }
 
   to {
     transform:translateX(0rem);
     opacity:1;
+    box-shadow:$sombra-exuberante;
   }
 }
 
@@ -191,15 +195,5 @@
   to {
     transform:translateX(0rem);
     opacity:.8;
-  }
-}
-
-@keyframes mostra-container-fatos {
-  from {
-    opacity:0;
-  }
-
-  to {
-    opacity:1;
   }
 }

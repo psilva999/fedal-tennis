@@ -57,6 +57,17 @@ const Nadal = () => {
             Derrotas não aumentam nada infelizmente, mas perceber a dificuldade do que tenho feito até hoje, ajuda a valorizar tudo o que fiz antes
           </i>
         </q>
+
+        <p>
+          Nadal é discreto e não costuma ter sua vida pessoal comentada. O único relacionamento afetivo conhecido é o que mantém desde 2005 com a jovem estudante Maria Francisca Perello, amiga da irmã do tenista, Maria Isabel Nadal.
+        </p>
+
+        <p>
+          Em fevereiro de 2015, ao disputar o ATP 500 do Rio Open, 
+          <a className='data-quote-container frase'>
+            Rafa Nadal desfilou no pelotão de frente da escola de samba Unidos da Viradouro</a>
+          , a primeira do Grupo Especial a entrar na Marquês de Sapucaí na noite de domingo.
+        </p>
       </article>
 
       <article className='dados'>

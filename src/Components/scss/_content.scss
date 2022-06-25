@@ -53,8 +53,9 @@
       width:9rem;
       display:grid;
       gap:.5rem;
+      height:7.5rem;
       align-items:center;
-      box-shadow:$sombra-exuberante;
+      box-shadow:none;
       opacity:0;
     }
 
@@ -176,9 +177,11 @@
     q {
       margin-top:2rem;
       width:90%;
+      min-height:9.7rem;
       padding:2rem 4rem;
       font-size:1.3rem;
       text-align:center;
+      margin-bottom:2rem;
 
       i {
         background:$light-to-little-dark;
@@ -186,6 +189,10 @@
         -webkit-text-fill-color: transparent;
         line-height:1.9rem;
         font-weight:bold;
+        opacity:0;
+      }
+
+      i.active {
         opacity:.8;
       }
     }
@@ -205,7 +212,7 @@
       gap:2rem;
       font-size:1.3rem;
       width:29rem;
-      opacity:0;
+      opacity:1;
 
       li {
         font-weight:bolder;
