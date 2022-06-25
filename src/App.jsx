@@ -12,10 +12,18 @@ import Footer from './Components/Footer'
 import Recomendacoes from './Components/Recomendacoes'
 
 import { marcaTexto } from './Components/Events/marcaTexto'
+import { mostraConquistas, contaConquistas, mostraFatos } from './Components/Events/mostraDados'
 
 function App() {
   marcaTexto()
-  window.addEventListener('scroll', marcaTexto)
+  mostraConquistas()
+  
+  window.addEventListener('load', contaConquistas)
+
+  window.addEventListener('scroll', () => { 
+    marcaTexto()
+    mostraFatos()
+  })
 
   return (
     <>

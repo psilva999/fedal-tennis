@@ -12,13 +12,13 @@ const Guga = () => {
           <span>O Surfista do Saibro</span> </div>
 
         <nav>
-          <ul className='data-quote-container'>
-            <li>03</li>
+          <ul className='data-quote-container grand-slams'>
+            <li className='totalGrandSlams guga'></li>
             <li>GRAND SLAMS</li>  
           </ul> 
 
-          <ul className='data-quote-container'>
-            <li>20</li>
+          <ul className='data-quote-container titulos'>
+            <li className='totalTitulos guga'></li>
             <li>TÍTULOS</li>  
           </ul> 
         </nav>   

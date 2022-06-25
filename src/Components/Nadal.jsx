@@ -12,13 +12,13 @@ const Nadal = () => {
           <span>EL TORO DE MANACOR</span> </div>
 
         <nav>
-          <ul className='data-quote-container' >
-            <li>22</li>
+          <ul className='data-quote-container grand-slams'>
+            <li className='totalGrandSlams nadal'>22</li>
             <li>GRAND SLAMS</li>  
           </ul> 
 
-          <ul className='data-quote-container' >
-            <li>92</li>
+          <ul className='data-quote-container titulos'>
+            <li className='totalTitulos nadal'>92</li>
             <li>TÍTULOS</li>  
           </ul> 
         </nav>   

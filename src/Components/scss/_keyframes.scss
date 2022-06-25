@@ -169,3 +169,15 @@
     opacity:.2;
   }
 }
+
+@keyframes mostra-conquistas {
+  from {
+    transform:translateX(2rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0rem);
+    opacity:1;
+  }
+}

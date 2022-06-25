@@ -12,13 +12,13 @@ const Federer = () => {
           <span>The Swiss Maestro</span> </div>
 
         <nav>
-          <ul className='data-quote-container'>
-            <li>20</li>
+          <ul className='data-quote-container grand-slams'>
+            <li className='totalGrandSlams federer'>20</li>
             <li>GRAND SLAMS</li>  
           </ul> 
 
-          <ul className='data-quote-container'>
-            <li>103</li>
+          <ul className='data-quote-container titulos'>
+            <li className='totalTitulos federer'>103</li>
             <li>TÍTULOS</li>  
           </ul>
         </nav>    
