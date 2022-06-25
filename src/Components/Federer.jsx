@@ -54,7 +54,7 @@ const Federer = () => {
             tornou-se o tenista mais velho a assumir o topo do ranking da ATP.</a>
         </p>
 
-        <q className='data-quote-container'>
+        <q className='data-quote-container frase'>
           <i>
             Roger trouxe às quadras uma aliança raríssima de técnica, finesse, exuberância física, talento natural, disciplina, plasticidade e determinação.
           </i>
@@ -62,7 +62,7 @@ const Federer = () => {
       </article>
 
       <article className='dados'>
-        <ul className='data-quote-container'>
+        <ul className='data-quote-container fatos'>
           <li>20 títulos de simples em Grand Slams</li>
           <li>3 temporadas com 3 títulos de simples masculinos (2004, 2006–07)</li>
           <li>7 temporadas com mais de 2 títulos de simples (2004–07, 2009, 2017 e 2019)</li>

@@ -75,5 +75,16 @@ export function contaConquistas() {
 }
 
 export function mostraFatos() {
-  console.log('das')
+  const li = document.querySelectorAll('.fatos li'), 
+
+      mostraFatos = window.innerHeight,
+      showTop = li[1].getBoundingClientRect().top
+
+  if (showTop < mostraFatos) {
+    document.querySelector('.fatos').style.animation = 'mostra-container-fatos .3s linear forwards'
+
+    li.forEach(li => {
+      li.style.animation = 'mostra-fatos .7s linear forwards'
+    })
+  }
 }

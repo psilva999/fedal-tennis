@@ -52,7 +52,7 @@ const Nadal = () => {
           <a className='background-detail off'>recorde de conquistas de Majors no tênis masculino.</a>
         </p>
 
-        <q className='data-quote-container'>
+        <q className='data-quote-container frase'>
           <i>
             Derrotas não aumentam nada infelizmente, mas perceber a dificuldade do que tenho feito até hoje, ajuda a valorizar tudo o que fiz antes
           </i>
@@ -60,7 +60,7 @@ const Nadal = () => {
       </article>
 
       <article className='dados'>
-        <ul className='data-quote-container'>
+        <ul className='data-quote-container fatos'>
           <li>92 títulos conquistados sendo 22 em grand slams</li>
           <li>Considerado o rei de roland de garros por ter conquistado 14 edições  do torneio</li>
           <li>Nadal conquistou pelo menos 1 título de grand slam ao longo de 10 anos</li>

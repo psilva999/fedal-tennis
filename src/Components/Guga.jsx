@@ -55,7 +55,7 @@ const Guga = () => {
           , Gustavo Kuerten conquistou um título de Roland Garros em 1994, no torneio de duplas masculinas juvenis, ao lado do equatoriano Nicolas Lapentti.
         </p>
 
-        <q className='data-quote-container'>
+        <q className='data-quote-container frase'>
           <i>
             O primeiro título eu não esperava. O segundo foi tão difícil que foi meio tenso. nunca nos meus melhores sonhos eu venceria pela terceira vez.
           </i>
@@ -64,7 +64,7 @@ const Guga = () => {
       </article>
 
       <article className='dados'>
-        <ul className='data-quote-container'>
+        <ul className='data-quote-container fatos'>
           <li>Possui 358 vitórias e 195 derrotas ao longo de sua carreira</li>
           <li>Conquistou 20 títulos sendo 3 em grand slam e 17 em torneios ATP</li>
           <li>Atingiu o posto de número 1 do mundo em dezembro de 2000, onde ficou por 43 semanas</li>

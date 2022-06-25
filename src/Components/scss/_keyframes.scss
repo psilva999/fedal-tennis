@@ -181,3 +181,25 @@
     opacity:1;
   }
 }
+
+@keyframes mostra-fatos {
+  from {
+    transform:translateX(-1.5rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0rem);
+    opacity:.8;
+  }
+}
+
+@keyframes mostra-container-fatos {
+  from {
+    opacity:0;
+  }
+
+  to {
+    opacity:1;
+  }
+}
