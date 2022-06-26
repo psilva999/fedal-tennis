@@ -6,7 +6,6 @@ import Guga from '../Assets/images/guga/0-guga.png'
 import Nadal from '../Assets/images/nadal/0-nadal.png'
 
 const Tenistas = () => {
-
   return (
     <section className='tenistas'>
 

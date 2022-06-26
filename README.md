@@ -13,3 +13,5 @@ ___
 `npm run dev`
 
 `npm i emailjs-com` -- para instalar o emailjs
+
+`npm install react-scroll` -- instala o react-scroll
