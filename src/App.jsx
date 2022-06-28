@@ -20,6 +20,7 @@ import { escreveFrase } from './Components/Events/escreveFrase'
 
 import { mostraConquistas, contaConquistas, mostraFatos } from './Components/Events/mostraDados'
 import { barraDeProgresso } from './Components/Events/barraDeProgresso'
+
 import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
 
@@ -41,21 +42,6 @@ function App() {
     voltaProTopo()
   })
 
-  window.addEventListener('resize', () => {
-    const img = document.querySelector(".trio")
-
-    if (window.innerWidth <= 1051.2) {
-      if (img.classList.contains('maestro'))
-
-
-      if (img.classList.contains('surfista'))
-        
-
-      if (img.classList.contains('toro'))
-        
-    }
-  })
-
   return (
     <>
       <div className='linha-de-leitura'></div>
@@ -66,8 +52,8 @@ function App() {
 
         <section className='content'>
           {/* <Federer/> */}
-          {/* <Guga/> */}
-          <Nadal/>
+          <Guga/>
+          {/* <Nadal/> */}
 
           <Recomendacoes/>
         </section>

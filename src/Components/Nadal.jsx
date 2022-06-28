@@ -1,5 +1,7 @@
 import React from 'react'
+
 import NadalAus2021 from '../Assets/images/nadal/1-nadal-aus-2021.jpg'
+import NadalAus2021Grid from '../Assets/images/nadal/1-nadal-aus-2021-grid.jpg'
 
 import NadalFran05 from '../Assets/images/nadal/2-rafa-fran-2005.jpg'
 import NadalRolandGarros from '../Assets/images/nadal/3-nadal-rolland-garros.jpg'
@@ -32,7 +34,12 @@ const Nadal = () => {
           O espanhol acumula troféus e uma série de recordes. E não há sinais de que essa gloriosa carreira possa estar perto do fim.
         </p>
 
-        <img src={ NadalAus2021 } alt='Nadal - Austrália Open 2021' className='nadal-aus-2021'/>
+        <picture>
+          <source media='(max-width: 65.7rem)' srcset={ NadalAus2021Grid } type='image/jpg'/>
+
+          <img src={ NadalAus2021 } alt='Nadal - Austrália Open 2021' className='nadal-aus-2021'/>
+        </picture>
+
         <span>
           El toro de Manarcor possui 1058 vitórias ao longo da carreira. Nadal abalou o mundo do tênis logo nos seus primeiros anos no tênis profissional
         </span>

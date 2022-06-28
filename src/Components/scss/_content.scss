@@ -12,6 +12,7 @@
   padding:3rem 2rem 3rem 2rem;
   border-radius:.3rem 0 0 0;
   box-shadow:$sombra-discreta;
+  animation:show-page-content 1.2s linear forwards;
 
   .data-quote-container {
     background:$amanhecer;
@@ -116,7 +117,7 @@
       margin-bottom:1.5rem;
     }
 
-    .federer-racket, .guga-ball, .nadal-aus-2021 {
+    picture {
       width:25rem;
       grid-area:2 / 1 / 6 / 3;
     }
@@ -164,9 +165,9 @@
         content:'';
         position:absolute;
         background:$main-green-background;
-        width:.3rem;
+        width:.2rem;
         height:1.5rem;
-        margin-left:-.2rem;
+        margin-left:-.5rem;
         margin-top:.2rem;
         z-index:-1;
         opacity:1;

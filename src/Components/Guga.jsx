@@ -1,5 +1,7 @@
 import React from 'react'
+
 import GugaBall from '../Assets/images/guga/1-guga-photo-ball.jpg'
+import GugaBallGrid from '../Assets/images/guga/1-guga-photo-ball-grid.jpg'
 
 import GugaWinner from '../Assets/images/guga/2-guga-winner.jpg'
 import GugaRolandGarros from '../Assets/images/guga/3-guga-roland-garros.jpg'
@@ -32,7 +34,12 @@ const Guga = () => {
           Sua legião de fãs foi construída não apenas por consequência de suas conquistas, mas também pelo seu enorme carisma.
         </p>
 
-        <img src={ GugaBall } alt='Guga com uma bola de tênis na mão' className='guga-ball'/>
+        <picture>
+          <source media='(max-width: 65.7rem)' srcset={ GugaBallGrid } type='image/jpg'/>
+
+          <img src={ GugaBall } alt='Guga com uma bola de tênis na mão' className='guga-ball'/>
+        </picture>
+
         <span className='ajuste'>
           Tricampeão de Roland Garros, número 1 do mundo por 43 semanas e membro do hall da fama do tênis.
         </span>

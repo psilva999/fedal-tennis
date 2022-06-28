@@ -11,6 +11,7 @@
   padding:0 .3rem .5rem .25rem;
   border-radius:0 .2rem .6rem 0;
   box-shadow:$sombra-baixa-direita;
+  animation:show-page-content .6s linear forwards;
 
   button {
     background:none;

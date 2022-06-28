@@ -1,9 +1,9 @@
 @media (max-width:74.5rem) {
   .content {
-    width:97vw;
+    width:95vw;
+    padding:3rem 1rem;
 
     article {
-      background:green;
       width:60rem;
     }
   }
@@ -18,25 +18,19 @@
     }
 
     article {
-      width:100%;
+      width:100% !important;
     }
 
     .apresentacao {
       margin-bottom:3rem;
       display:flex;
       flex-wrap:wrap;
-      width:100%;
       justify-content:center;
     
-      img {
+      img, picture {
         width:100% !important;
         -webkit-clip-path:$polygon-duas-pontas;
         clip-path:$polygon-duas-pontas;
-      }
-    
-      .federer-racket, .guga-ball, .nadal-aus-2021 {
-        background-position: 50% 50% !important;
-        background-size:10rem !important;
       }
     
       span {
@@ -82,7 +76,6 @@
 
     .dados {
       div {
-        background:red;
         max-width:35rem;
       }
     }
@@ -96,22 +89,127 @@
 
 @media (max-width:45.7rem) {
   .content {
+    padding-left:.5rem;
+    padding-right:.5rem;
+
     header {
       justify-self:center;
       display:grid;
     }
 
+    .apresentacao {
+      span {
+        top:0;
+      }
+    }
+
     .dados {
-      max-width:18rem;
+      ul {
+        width:90% !important;
+        padding-left:2rem;
+        font-size:1rem;
+      }
+
+      div {
+        margin-top:-1.5rem;
+        width:100% !important;
+      }
+
+      img {
+        height:20rem;
+      }
     }
   }
 }
 
 @media (max-width:31.5rem) {
   .content {
+    width:98vw;
+
     header {
-      justify-self:left;
       margin-left:0;
+
+      h1 {
+        font-size:2.5rem;
+        letter-spacing:.1rem;
+      }
+
+      span {
+        font-size:.8rem;
+      }
+
+      nav {
+        gap:1.5rem;
+      }
+
+      ul {
+        width:7rem;
+        height:5rem;
+        padding:.2rem .4rem .3rem .4rem;
+        gap:.2rem;
+
+        li:nth-child(2) {
+          font-size:.8rem;
+        }
+      }
+
+      .totalGrandSlams, .totalTitulos {
+        font-size:1.5rem !important;
+      }
+    }
+
+    .apresentacao {
+      span {
+        width:90% !important;
+        font-size:.9rem;
+      }
+    }
+
+    .frase {
+      box-shadow:none;
+      width:100% !important;
+      font-size:1.1rem !important;
+      padding:2rem 1rem 2rem 1rem !important;
+      text-align:right !important;
+    }
+
+    .dados {
+      ul, div {
+        width:100% !important;
+      }
+
+      ul {
+        box-shadow:none;
+      }
+
+      img {
+        height:12rem;
+      }
+    }
+
+    .recomendacoes {
+      #divisor {
+        margin-top:-6rem;
+      }
+
+      img {
+        width:100%;
+      }
+
+      .ao-vivo {
+        figcaption {
+          display:none;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width:23.2rem) {
+  .recomendacoes {
+    #divisor {
+      margin-top:-6rem;
     }
   }
 }

@@ -1,5 +1,7 @@
 import React from 'react'
+
 import FedererRacket from '../Assets/images/federer/1-federer-racket.jpg'
+import FedererRacketGrid from '../Assets/images/federer/1-federer-racket-grid.jpg'
 
 import FedererWimbledon from '../Assets/images/federer/2-federer-wimbledon.jpg'
 import FedererTroffier from '../Assets/images/federer/3-federer-troffier.jpg'
@@ -31,7 +33,12 @@ const Federer = () => {
             dizem respeito a um tenista: o suíço Roger Federer.</a>  
         </p>
 
-        <img src={ FedererRacket } alt='Federer jogando' className='federer-racket'/>
+        <picture>
+          <source media='(max-width: 65.7rem)' srcset={ FedererRacketGrid } type='image/jpg'/>
+
+          <img src={ FedererRacket } alt='Federer jogando' className='federer-racket'/>
+        </picture>
+
         <span>
           Roger Federer é o único  tenista a ter conseguido por três vezes (2004, 2006, 2007) vencer três dos quatro torneios do Grand Slam na mesma temporada.  
         </span>
