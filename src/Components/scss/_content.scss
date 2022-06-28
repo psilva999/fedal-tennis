@@ -1,5 +1,6 @@
 @import 'config';
 @import 'keyframes';
+@import 'querie-content';
 
 .content {
   background:$white-mode-gradient;
@@ -36,7 +37,7 @@
       -webkit-text-fill-color:transparent;
       font-size:2.5rem;
       font-weight:600;
-      letter-spacing:0.2rem;
+      letter-spacing:.2rem;
     }
 
     span {
@@ -163,14 +164,12 @@
         content:'';
         position:absolute;
         background:$main-green-background;
-        width:1.3rem;
+        width:.3rem;
         height:1.5rem;
-        border-radius:.5rem 0 .5rem .5rem;
-        margin-left:-.5rem;
+        margin-left:-.2rem;
+        margin-top:.2rem;
         z-index:-1;
         opacity:1;
-        -webkit-clip-path:$polygon-detail;
-        clip-path:$polygon-detail;
       }
     }
 

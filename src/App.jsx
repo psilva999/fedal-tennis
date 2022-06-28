@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import { Link } from 'react-scroll'
 import './Css/app.min.css'
 
@@ -31,13 +33,27 @@ function App() {
   })
 
   window.addEventListener('scroll', () => { 
-    console.log(window.scrollY)
     barraDeProgresso()
     marcaTexto()
 
     escreveFrase()
     mostraFatos()
     voltaProTopo()
+  })
+
+  window.addEventListener('resize', () => {
+    const img = document.querySelector(".trio")
+
+    if (window.innerWidth <= 1051.2) {
+      if (img.classList.contains('maestro'))
+
+
+      if (img.classList.contains('surfista'))
+        
+
+      if (img.classList.contains('toro'))
+        
+    }
   })
 
   return (

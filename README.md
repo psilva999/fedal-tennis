@@ -15,3 +15,5 @@ ___
 `npm i emailjs-com` -- para instalar o emailjs
 
 `npm install react-scroll` -- instala o react-scroll
+
+`npm install react-router-dom@6` -- instala o react-router-dom

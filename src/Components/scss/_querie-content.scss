@@ -1,0 +1,117 @@
+@media (max-width:74.5rem) {
+  .content {
+    width:97vw;
+
+    article {
+      background:green;
+      width:60rem;
+    }
+  }
+}
+
+@media (max-width:65.7rem) {
+  .content {
+    margin-bottom:1rem;
+
+    header {
+      gap:1.5rem;
+    }
+
+    article {
+      width:100%;
+    }
+
+    .apresentacao {
+      margin-bottom:3rem;
+      display:flex;
+      flex-wrap:wrap;
+      width:100%;
+      justify-content:center;
+    
+      img {
+        width:100% !important;
+        -webkit-clip-path:$polygon-duas-pontas;
+        clip-path:$polygon-duas-pontas;
+      }
+    
+      .federer-racket, .guga-ball, .nadal-aus-2021 {
+        background-position: 50% 50% !important;
+        background-size:10rem !important;
+      }
+    
+      span {
+        top:.5rem;
+        max-width:31rem;
+        text-align:center;
+      }
+    
+      .federer-wimbledon, .guga-winner, .nadal-fran-05 {
+        left:0rem;
+      }
+    }
+
+    .dados {
+      margin-top:3rem;
+      display:flex;
+      gap:4rem;
+      flex-wrap:wrap;
+      justify-content:center;
+
+      ul {
+        max-width:29rem;
+      }
+
+      div {
+        width:35rem;
+      }
+
+      img {
+        width:100%;
+      }
+    }
+
+  }
+}
+
+@media (max-width:53.2rem) {
+  .content {
+    header {
+      
+      justify-self: left;
+    }
+
+    .dados {
+      div {
+        background:red;
+        max-width:35rem;
+      }
+    }
+
+    .recomendacoes {
+      display:grid;
+      gap:1rem;
+    }
+  }
+}
+
+@media (max-width:45.7rem) {
+  .content {
+    header {
+      justify-self:center;
+      display:grid;
+    }
+
+    .dados {
+      max-width:18rem;
+    }
+  }
+}
+
+@media (max-width:31.5rem) {
+  .content {
+    header {
+      justify-self:left;
+      margin-left:0;
+    }
+  }
+}
