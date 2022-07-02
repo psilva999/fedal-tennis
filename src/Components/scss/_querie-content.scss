@@ -1,5 +1,5 @@
 @media (max-width:74.5rem) {
-  .content {
+  .content.active {
     width:95vw;
     padding:3rem 1rem;
 
@@ -10,7 +10,7 @@
 }
 
 @media (max-width:65.7rem) {
-  .content {
+  .content.active {
     margin-bottom:1rem;
 
     header {
@@ -68,7 +68,7 @@
 }
 
 @media (max-width:53.2rem) {
-  .content {
+  .content.active {
     header {
       
       justify-self: left;
@@ -88,7 +88,7 @@
 }
 
 @media (max-width:45.7rem) {
-  .content {
+  .content.active {
     padding-left:.5rem;
     padding-right:.5rem;
 
@@ -123,7 +123,7 @@
 }
 
 @media (max-width:31.5rem) {
-  .content {
+  .content.active {
     width:98vw;
 
     header {

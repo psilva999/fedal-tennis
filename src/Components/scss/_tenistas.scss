@@ -2,6 +2,10 @@
 @import 'keyframes';
 
 .tenistas {
+  display:none;
+}
+
+.tenistas.active {
   background:$outside-gradient;
   margin:9rem auto;
   display:flex;
@@ -57,7 +61,7 @@
 }
 
 @media (max-width:32rem) {
-  .tenistas {
+  .tenistas.active {
     button:hover {
       .efeito-stories {
         transform:none;

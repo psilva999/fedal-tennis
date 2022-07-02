@@ -13,6 +13,8 @@ import Nadal from './Components/Nadal'
 
 import Recomendacoes from './Components/Recomendacoes'
 import VoltaProTopo from './Assets/svg/2-volta-topo.svg'
+
+import Produto from './Components/Produto'
 import Footer from './Components/Footer'
 
 import { marcaTexto } from './Components/Events/marcaTexto'
@@ -45,6 +47,7 @@ function App() {
   return (
     <>
       <div className='linha-de-leitura'></div>
+      <div className='top'></div>
 
       <Header/>
       <main>
@@ -57,10 +60,14 @@ function App() {
 
           <Recomendacoes/>
         </section>
+
+        <section className='produto active'>
+          <Produto/>
+        </section>
       </main>
 
       <Link activeClass="active"
-          to='tenistas'
+          to='top'
           spy={ true }
           smooth={ true }
           offset={ -145 }

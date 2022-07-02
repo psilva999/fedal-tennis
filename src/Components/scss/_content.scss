@@ -3,6 +3,10 @@
 @import 'querie-content';
 
 .content {
+  display:none;
+}
+
+.content.active {
   background:$white-mode-gradient;
   width:70rem;
   display:grid;

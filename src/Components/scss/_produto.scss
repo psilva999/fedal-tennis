@@ -1,0 +1,49 @@
+@import 'config';
+@import 'keyframes';
+
+.produto {
+  display:none;
+}
+
+.produto.active {
+  display:grid;
+  width:70rem;
+  place-items:center;
+  background: $white-mode-gradient;
+  width:70rem;
+  display:grid;
+  place-items:center;
+  color:$main-black;
+  margin:9rem auto 5rem auto;
+  padding:3rem 2rem 3rem 2rem;
+  border-radius:.3rem 0 0 0;
+  box-shadow:$sombra-discreta;
+  animation:show-page-content 1.2s linear forwards;
+}
+
+
+@media (max-width:74.5rem) {
+  .produto.active {
+    width:95vw;
+    padding:3rem 1rem;
+  }
+} 
+
+@media (max-width:65.7rem) {
+  .produto.active {
+    margin-bottom:1rem;
+  }
+}
+
+@media (max-width:45.7rem) {
+  .produto.active {
+    padding-left:.5rem;
+    padding-right:.5rem;
+  }
+}
+
+@media (max-width:31.5rem) {
+  .produto.active {
+    width:98vw;
+  }
+}

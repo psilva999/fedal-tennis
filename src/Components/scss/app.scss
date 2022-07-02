@@ -41,8 +41,17 @@ body {
     z-index:10;
   }
 
+  .top {
+    position:absolute;
+    width:.2rem;
+    height:.2rem;
+    top:0;
+    z-index:-10;
+  }
+
   .volta-pro-topo {
     right:-5rem;
+    opacity:0;
   }
 
   .volta-pro-topo.active {
@@ -80,4 +89,5 @@ body {
 @import 'querie-content';
 @import 'recomendacoes';
 
+@import 'produto';
 @import 'footer';
