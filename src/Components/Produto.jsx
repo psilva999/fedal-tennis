@@ -6,6 +6,23 @@ import RacketDetail from '../Assets/images/store/2-racket-detail.jpg'
 import ThirdRacket from '../Assets/images/store/3-racket-detail-third.jpg'
 import LastRacket from '../Assets/images/store/4-racket-detail-last.jpg'
 
+import Detail from '../Assets/svg/store/0-detalhe.svg'
+import Avaliacao from '../Assets/svg/store/1-avaliacao.svg'
+import CreditCard from '../Assets/svg/store/2-credit.svg'
+
+import Seta from '../Assets/svg/store/3-seta.svg'
+import Reply from '../Assets/svg/store/4-reply.svg'
+import Verified from '../Assets/svg/store/5-verified.svg'
+
+import Trophy from '../Assets/svg/store/6-trophy.svg'
+import Garantia from '../Assets/svg/store/7-garantia.svg'
+
+import FirstMinRacket from '../Assets/images/store/5-first-racket-min.jpg'
+import SecondMinRacket from '../Assets/images/store/6-second-racket-min.jpg'
+
+import ThirdMinRacket from '../Assets/images/store/7-third-racket-min.jpg'
+import LastMinRacket from '../Assets/images/store/8-last-racket-min.jpg'
+
 const Produto = () => {
   return (
     <>
@@ -21,10 +38,11 @@ const Produto = () => {
       <article className='oferta'>
         <div>
           <span>30 vendidos</span>
+          <img src={ Detail } alt=''/>
 
           <h1>Raquete de Tênis Babolat Falcon Preta Azul e Prata</h1>
 
-          <img src='' alt='estrelas'/>
+          <img src={ Avaliacao } alt='estrelas'/>
 
           <span>EM ESTOQUE | SKU#: TR121205-286</span>
         </div>
@@ -40,7 +58,7 @@ const Produto = () => {
             <span>no PIX</span>
           </h1>
 
-          <img src='' alt='credit card'/>
+          <img src={ CreditCard } alt='credit card'/>
 
           <span>
             <strong>R$ 299, 90 </strong> em até 
@@ -61,7 +79,7 @@ const Produto = () => {
             Quantidade: 
             <button>
               1 unidade 
-              <img src='' alt='seta'/>  
+              <img src={ Seta } alt='seta'/>  
             </button>
           </div>
         </div>
@@ -73,7 +91,7 @@ const Produto = () => {
 
         <div>
           <p>
-            <img src='' alt=''/>
+            <img src={ Reply } alt=''/>
 
             <span>
               <span className='color-effect'>Devolução grátis. </span>
@@ -82,7 +100,7 @@ const Produto = () => {
           </p>
 
           <p>
-            <img src='' alt=''/>
+            <img src={ Verified } alt=''/>
 
             <span>
               <span className='color-effect'>Compra Garantida. </span>
@@ -91,7 +109,7 @@ const Produto = () => {
           </p>
 
           <p>
-            <img src='' alt=''/>
+            <img src={ Trophy } alt=''/>
 
             <span>
               <span className='color-effect'>Fedal Pontos. </span>
@@ -104,7 +122,7 @@ const Produto = () => {
           </p>
 
           <p>
-            <img src='' alt=''/>
+            <img src={ Garantia } alt=''/>
 
             <span>
               <span className='color-effect'>1 mês </span>
@@ -118,10 +136,12 @@ const Produto = () => {
         <div>
           <h1>Produtos patrocinados</h1>
           <span>Anuncie aqui</span>
+
+          <img src={ Detail } alt=''/>
         </div>
 
         <div>
-          <img src=''/>
+          <img src={ FirstMinRacket }/>
 
           <div>
             <span>R$ 2100,00</span>
@@ -133,7 +153,7 @@ const Produto = () => {
         </div>
 
         <div>
-          <img src=''/>
+          <img src={ SecondMinRacket }/>
           
           <div>
             <span>R$ 2100,00</span>
@@ -145,7 +165,7 @@ const Produto = () => {
         </div>
 
         <div>
-          <img src=''/>
+          <img src={ ThirdMinRacket }/>
           
           <div>
             <span>R$ 2100,00</span>
@@ -157,7 +177,7 @@ const Produto = () => {
         </div>
 
         <div>
-          <img src=''/>
+          <img src={ LastMinRacket }/>
           
           <div>
             <span>R$ 2100,00</span>
