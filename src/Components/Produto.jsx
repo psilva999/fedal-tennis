@@ -27,22 +27,25 @@ const Produto = () => {
   return (
     <>
       <div className='racket-container'>
-        <img src={ MainRacket }/>
-        <img src={ MainRacket }/>
-
-        <img src={ RacketDetail }/>
-        <img src={ ThirdRacket }/>
-        <img src={ LastRacket }/>
+        <img src={ MainRacket } className='main-image'/>
+        
+        <div className='racket-details'>
+          <img src={ MainRacket }/>
+          <img src={ RacketDetail }/>
+          
+          <img src={ ThirdRacket }/>
+          <img src={ LastRacket }/>
+        </div>
       </div>
 
       <article className='oferta'>
         <div>
           <span>30 vendidos</span>
-          <img src={ Detail } alt=''/>
+          <img src={ Detail } alt='' className='detail'/>
 
           <h1>Raquete de Tênis Babolat Falcon Preta Azul e Prata</h1>
 
-          <img src={ Avaliacao } alt='estrelas'/>
+          <img src={ Avaliacao } alt='estrelas' className='stars'/>
 
           <span>EM ESTOQUE | SKU#: TR121205-286</span>
         </div>
@@ -51,29 +54,31 @@ const Produto = () => {
           A Raquete de Tênis Babolat Falcon oferece uma combinação perfeita entre precisão e controle com o objetivo de maximizar sua performance.
         </p>
 
-        <div>
+        <div className='preco'>
           <span>R$ 499,90</span>
           <h1>
             R$ 269,91 
-            <span>no PIX</span>
+            <span> no PIX</span>
           </h1>
 
-          <img src={ CreditCard } alt='credit card'/>
+          <div>
+            <img src={ CreditCard } alt='credit card'/>
 
-          <span>
-            <strong>R$ 299, 90 </strong> em até 
-            <strong>7x</strong> de 
+            <span>
+              <strong>R$ 299, 90 </strong> em até
+              <strong> 7x</strong> de
+              <strong> R$ 42,84</strong>
+            </span>
 
-            <strong>R$ 42,84</strong>
-          </span>
+          </div>
         </div>
 
-        <div>
+        <div className='infos'>
           <span>
             Cor: <strong>Azul / Prata</strong>
           </span>
 
-          <p>Desconto à partir de 5 raquetes</p>
+          <p>Descontos à partir de <strong>5 raquetes</strong></p>
 
           <div className='quantidade'>
             Quantidade: 
@@ -82,6 +87,17 @@ const Produto = () => {
               <img src={ Seta } alt='seta'/>  
             </button>
           </div>
+
+          <ul className='total-de-raquetes'>
+            <li>1 unidade</li>
+            <li>2 unidades</li>
+
+            <li>3 unidades</li>
+            <li>4 unidades</li>
+
+            <li>5 unidades</li>
+            <li>6 unidades</li>
+          </ul>
         </div>
         
         <form>
@@ -89,7 +105,7 @@ const Produto = () => {
           <button>Adicionar ao carrinho</button>
         </form>
 
-        <div>
+        <div className='garantias'>
           <p>
             <img src={ Reply } alt=''/>
 
@@ -113,11 +129,9 @@ const Produto = () => {
 
             <span>
               <span className='color-effect'>Fedal Pontos. </span>
-              Você acumula
+              Você acumula 
 
-              <strong>
-                174 pontos.
-              </strong>
+              <strong> 174 pontos.</strong>
             </span>
           </p>
 

@@ -14,11 +14,298 @@
   display:grid;
   place-items:center;
   color:$main-black;
-  margin:9rem auto 5rem auto;
-  padding:3rem 2rem 3rem 2rem;
+  margin:15rem auto 5rem auto;
+  padding:0rem 1rem 3rem 1rem;
   border-radius:.3rem 0 0 0;
   box-shadow:$sombra-discreta;
-  animation:show-page-content 1.2s linear forwards;
+  animation:show-page-content .8s linear forwards;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:repeat(4, 1fr);
+
+  .racket-container {
+    margin-top:-20rem;
+    display:grid;
+    gap:1rem;
+    place-items:center;
+    width:30rem;
+    margin-left:-1rem;
+    grid-area:1 / 1 / 3 / 3;
+    animation:show-page-content 1s linear forwards;
+
+    img {
+      width:7.13rem;
+      height:8rem;
+      box-shadow:$racket-details;
+      cursor:pointer;
+      opacity:.8;
+      transition:.3s;
+
+      &:hover {
+        opacity:1;
+        transition:.3s;
+      }
+    }
+
+    .main-image {
+      width:30rem;
+      height:33rem;
+      border:none;
+      box-shadow:$raquete-principal;
+      border-radius:.2rem;
+      cursor:initial;
+      opacity:1;
+    }
+
+    div {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:.5rem;
+    }
+  }
+
+  .oferta, .outras-ofertas {
+    background:$white-mode-body;
+    box-shadow:$sombra-ofertas;
+    border:1px solid rgba(39, 39, 39, .2);
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    padding:1.5rem 2.5rem 2rem 1rem;
+  }
+
+  .oferta {
+    margin-top:-8rem;
+    margin-left:-1.3rem;
+    width:35rem;
+    grid-area:1 / 3 / 3 / 5;
+    gap:.8rem;
+    display:grid;
+    animation:show-page-content 1.2s linear forwards;
+
+    div:nth-child(1) {
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+
+      span:first-child {
+        grid-area:1 / 1 / 2 / 2;
+        opacity:.4;
+        font-size:.8rem;
+        font-weight:bold;
+        margin-left:0;
+      }
+
+      .detail {
+        position:absolute;
+        margin-top:-.5rem;
+        margin-left:31.5rem;
+      }
+
+      h1 {
+        grid-area:2 / 1 / 4 / 6;
+        font-size:2.2rem;
+        margin-top:-1rem;
+        margin-bottom:.5rem;
+      }
+
+      .stars {
+        grid-area:4 / 1 / 5 / 2;
+      }
+
+      span {
+        grid-area:4 / 3 / 5 / 6;
+        margin-left:-.3rem;
+        font-size:.9rem;
+        opacity:.8;
+        font-weight:bold;
+      }
+    }
+
+    p {
+      font-size:1.2rem;
+      width:28rem;
+    }
+
+    .preco {
+      margin-top:1.3rem;
+      display:grid;
+      gap:.3rem;
+
+      span:first-child {
+        font-weight:bold;
+        opacity:.8;
+        text-decoration:line-through;
+      }
+
+      h1 {
+        font-size:2.1rem;
+
+        span {
+          font-size:1rem;
+          text-decoration:none !important;
+          opacity:1 !important;
+          background:$green-to-left;
+          background-clip:text;
+          -webkit-text-fill-color:transparent;
+        }
+      }
+
+      div {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:19rem;
+
+        img {
+          width:2rem;
+        }
+
+        span {
+          opacity:.8 !important;
+        }
+      }
+    }
+
+    .infos {
+      margin-top:1.7rem;
+      display:grid;
+      gap:1.5rem;
+
+      p {
+        margin-top:1rem;
+        font-size:1.1rem;
+      }
+
+      .quantidade {
+        font-weight:bold;
+        display:flex;
+        width:13rem;
+        gap:.5rem;
+
+        button {
+          font-size:1rem;
+          background:transparent;
+          cursor:pointer;
+
+          img {
+            margin-left:.3rem;
+            width:.7rem;
+            opacity:.8;
+          }
+        }
+
+        &:after {
+          content:'(06 disponíveis)';
+          position:absolute;
+          font-size:.6rem;
+          opacity:.8;
+          margin-left:13.5rem;
+          margin-top:.23rem;
+        }
+      }
+
+      .total-de-raquetes {
+        display:none;
+      }
+
+      .total-de-raquetes.active {
+        display:grid;
+        z-index:3;
+        gap:1rem;
+        display:grid;
+        width:9rem;
+        background:#F1F1F1;
+        border-radius:0 0 .3rem .3rem;
+        padding:1rem;
+        box-shadow:$sombra-baixa-direita;
+        list-style:none;
+        text-align:right;
+        position:absolute;
+        margin:8rem 0 0 6rem;
+        animation:mostra-container .6s linear forwards;
+
+        li {
+          border-bottom:1px solid rgba(39,39,39,.2);
+          opacity:.8;
+          transition:.3s;
+          cursor:pointer;
+
+          &:hover {
+            opacity:1;
+            transition:.3s;
+          }
+        }
+
+      }
+    }
+
+    form {
+      margin-top:2rem;
+      display:grid;
+      gap:.7rem;
+
+      button {
+        color:rgba(39,39,39,.8);
+        font-weight:bold;
+        padding:.7rem;
+        font-size:1.5rem;
+        background:#B4F241;
+        cursor:pointer;
+        border-radius:.5rem;
+        width:25rem;
+        letter-spacing:.1rem;
+
+        &:first-child {
+          background:#A6E52F;
+        }
+
+        &:hover {
+          color:$main-black;
+        }
+      }
+    }
+
+    .garantias {
+      margin-top:2.3rem;
+      display:grid;
+      gap:1.5rem;
+
+      .color-effect {
+        background:$green-to-right;
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+      }
+
+      p {
+        font-size:1rem !important;
+        display:flex;
+        gap:.5rem;
+        justify-content:left;
+        width:23rem;
+      }
+
+      &:before {
+        content:'';
+        position:absolute;
+        background:$main-black;
+        width:3rem;
+        height:.1rem;
+        margin-top:-1.6rem;
+        margin-left:1rem;
+        opacity:.2;
+      }
+    }
+  }
+
+  .outras-ofertas {
+    width:35rem;
+    grid-area:3 / 3 / 5 / 5;
+  }
+
+  .descricao {
+    width:32rem;
+    grid-area:3 / 1 / 5 / 3;
+  }
 }
 
 
