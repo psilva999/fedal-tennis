@@ -154,7 +154,7 @@ const Produto = () => {
           <img src={ Detail } alt=''/>
         </div>
 
-        <div>
+        <div className='min'>
           <img src={ FirstMinRacket }/>
 
           <div>
@@ -166,7 +166,7 @@ const Produto = () => {
           </div>
         </div>
 
-        <div>
+        <div className='min'>
           <img src={ SecondMinRacket }/>
           
           <div>
@@ -178,7 +178,7 @@ const Produto = () => {
           </div>
         </div>
 
-        <div>
+        <div className='min'>
           <img src={ ThirdMinRacket }/>
           
           <div>
@@ -190,7 +190,7 @@ const Produto = () => {
           </div>
         </div>
 
-        <div>
+        <div className='min'>
           <img src={ LastMinRacket }/>
           
           <div>
