@@ -29,6 +29,8 @@ import { closeMenuFromOutside } from './Components/Events/handleMenu'
 function App() {
   marcaTexto()
   mostraConquistas()
+
+  window.addEventListener('click', closeMenuFromOutside)
   
   window.addEventListener('load', () => { 
     contaConquistas()

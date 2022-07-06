@@ -3,11 +3,10 @@ import React from 'react'
 import Logo from '../Assets/svg/0-logo.svg'
 import Store from '../Assets/svg/1-buy.svg'
 
-import { handleMenu, closeMenuFromOutside } from './Events/handleMenu.js'
+import { handleMenu } from './Events/handleMenu.js'
 import { darkAndWhiteMode } from './Events/darkAndWhiteMode.js'
 
 const Header = () => {
-  document.body.addEventListener('click', closeMenuFromOutside)
 
   return (
     <header className='header-fixo'>

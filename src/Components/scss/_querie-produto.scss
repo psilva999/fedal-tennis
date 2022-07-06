@@ -1,0 +1,162 @@
+@import 'config';
+@import 'keyframes';
+
+@media (max-width:74.5rem) {
+  .produto.active {
+    max-width:50rem;
+    padding:3rem 1rem;
+    margin-top:10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding-bottom:-5rem;
+
+    .racket-container {
+      margin-top:-15rem;
+      margin-bottom:0rem;
+      grid-area:2 / 1 / 3 / 2; 
+      width:35rem;
+
+      .main-image {
+        width:100%;
+      }
+
+      div {
+        margin-left:-4.5rem;
+      }
+    }
+
+    .oferta {
+      margin-top:-6rem;
+      grid-area:1 / 1 / 2 / 2;
+    }
+
+    .outras-ofertas {
+      grid-area:4 / 1 / 5 / 2;
+      margin-top:-18rem;
+    }
+
+    .descricao {
+      grid-area:3 / 1 / 4 / 2;
+      margin-left:-5rem;
+
+      &:before {
+        margin-top:-1.7rem;
+      }
+    }
+  }
+}
+
+@media (max-width:53.2rem) {
+  .produto.active {
+    width:98vw;
+  }
+}
+
+@media (max-width:39rem) {
+  .produto.active {
+    padding-right:.5rem;
+    gap:4rem;
+    
+    .racket-container, .oferta, .outras-ofertas, .descricao {
+      width:100%;
+      margin-left:0;
+      padding-right:.2rem;
+      padding-left:.2rem;
+  
+      .detail {
+        right:1rem;
+      }
+    }
+
+    .racket-container {
+      margin-top:-8rem;
+      width:100%;
+
+      div {
+        justify-content:center;
+        margin-left:0;
+        width:100%;
+        flex-wrap:wrap;
+      }
+    }
+
+    .oferta {
+      div:nth-child(1) {
+        width:100%;
+
+        span {
+          margin-left:0rem;
+        }
+      }
+
+      .preco {
+        div {
+          width:15rem;
+        }
+      }
+
+      .quantidade {
+        background:green;
+
+        &:after {
+          margin-top:1rem;
+          display:none;
+        }
+      }
+
+      .garantias {
+        flex-wrap:wrap;
+        width:80%;
+
+        p {
+          width:100%;
+        }
+      }
+
+      h1 {
+        font-size:1.6rem !important;
+        max-width:24rem; 
+      }
+
+      p {
+        width:100% !important;
+      }
+
+      form {
+        button {
+          font-size:1.1rem !important;
+          width:15rem !important;
+        }
+      }
+    }
+
+    .outras-ofertas {
+      margin-top:-2rem !important;
+
+      div:first-child {
+        flex-wrap:wrap;
+        width:17rem;
+
+        img {
+          right:1rem !important;
+          margin-left:0;
+          width:initial;
+        }
+      }
+
+      div {
+        width:100%;
+      }
+
+      .min {
+        div {
+          width:100%;
+        }
+      }
+    }
+
+    .descricao {
+      margin-top:-13rem;
+    }
+  }
+}
