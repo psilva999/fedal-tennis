@@ -1,5 +1,4 @@
 import React from 'react'
-import { firstImage } from './handleRacket'
 
 import MainRacket from '../../Assets/images/store/1-main-racket.jpg'
 import RacketDetail from '../../Assets/images/store/2-racket-detail.jpg'
@@ -14,7 +13,7 @@ const Racket = () => {
       <img src={ MainRacket } className='main-image'/>
       
       <div className='racket-details'>
-        <img src={ MainRacket } onClick={ firstImage }/>
+        <img src={ MainRacket }/>
         <img src={ RacketDetail }/>
         
         <img src={ ThirdRacket }/>

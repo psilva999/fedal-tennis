@@ -1,35 +1,44 @@
 import React from 'react'
+import { BrowserRouter as Router, Link, Navigate } from "react-router-dom"
+
 import { federerContent, gugaContent, nadalContent } from './Events/tennisPlayerContent.js'
 
-import Federer from '../Assets/images/federer/0-federer.png'
-import Guga from '../Assets/images/guga/0-guga.png'
-import Nadal from '../Assets/images/nadal/0-nadal.png'
+import FedererImg from '../Assets/images/federer/0-federer.png'
+import GugaImg from '../Assets/images/guga/0-guga.png'
+import NadalImg from '../Assets/images/nadal/0-nadal.png'
 
 const Tenistas = () => {
   return (
-    <section className='tenistas'>
 
-      <button onClick={ federerContent }>
-        <div className='efeito-stories federer'>
-          <img src={ Federer }/> </div>
+    <Router>
+      <section className='tenistas active'>
 
-        <span>Federer</span>
-      </button>
+        <Link to='/federer' className='no-style'>
+          <button onClick={ federerContent } className='button-federer'>
+            <div className='efeito-stories federer'>
+              <img src={ FedererImg }/> </div>
+            <span>Federer</span>
+          </button>
+        </Link>
 
-      <button onClick={ gugaContent }>
-        <div className='efeito-stories guga'>
-          <img src={ Guga }/> </div>
+        <Link to='/guga' className='no-style'>
+          <button onClick={ gugaContent } className='button-guga'>
+            <div className='efeito-stories guga'>
+              <img src={ GugaImg }/> </div>
+            <span>Guga</span>
+          </button>
+        </Link>
 
-        <span>Guga</span>
-      </button>
-
-      <button onClick={ nadalContent }>
-        <div className='efeito-stories nadal'>
-          <img src={ Nadal }/> </div>
-
-        <span>Nadal</span>
-      </button>
-    </section>
+        <Link to='/nadal' className='no-style'>
+          <button onClick={ nadalContent } className='button-nadal'>
+            <div className='efeito-stories nadal'>
+              <img src={ NadalImg }/> </div>
+            <span>Nadal</span>
+          </button>
+        </Link>
+      
+      </section>
+    </Router>
   )
 }
 

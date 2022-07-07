@@ -18,6 +18,15 @@
   box-shadow:$sombra-discreta;
   animation:show-page-content 1.2s linear forwards;
 
+  .tenista-fgn {
+    display:none;
+  }
+
+  .tenista-fgn.active {
+    display:block;
+    width:60rem;
+  }
+
   .data-quote-container {
     background:$amanhecer;
     color:$main-white-background;
@@ -31,7 +40,7 @@
   }
 
   header {
-    justify-content:space-between;
+    justify-content:center;
     align-items:top;
     gap:5rem;
 
@@ -82,7 +91,7 @@
     }
   }
 
-  article {
+  .apresentacao, .historia, .dados {
     display:grid;
     place-items:center;
     width:60rem;

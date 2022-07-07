@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import { Link } from 'react-scroll'
+
 import './Css/app.min.css'
 
 import Header from './Components/Header'
@@ -25,6 +24,7 @@ import { barraDeProgresso } from './Components/Events/barraDeProgresso'
 
 import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
+import { federerContent } from './Components/Events/tennisPlayerContent'
 
 function App() {
   marcaTexto()
@@ -33,6 +33,7 @@ function App() {
   window.addEventListener('click', closeMenuFromOutside)
   
   window.addEventListener('load', () => { 
+    federerContent()
     contaConquistas()
     voltaProTopo()
   })
@@ -55,16 +56,16 @@ function App() {
       <main>
         <Tenistas/>
 
-        <section className='content'>
-          {/* <Federer/> */}
-          <Guga/>
-          {/* <Nadal/> */}
-
+        <section className='content active'>
+          <article className='tenista-fgn active'>
+            <Federer/>
+          </article>
+          
           <Recomendacoes/>
         </section>
 
-        <section className='produto active'>
-          <Produto/>
+        <section className='produto'>
+          {/* <Produto/> */}
         </section>
       </main>
 

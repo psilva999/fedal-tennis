@@ -6,6 +6,7 @@
 }
 
 .tenistas.active {
+  text-decoration:none;
   background:$outside-gradient;
   margin:9rem auto;
   display:flex;
@@ -16,6 +17,11 @@
   border-radius:0 .2rem .6rem 0;
   box-shadow:$sombra-baixa-direita;
   animation:show-page-content .6s linear forwards;
+
+  .no-style {
+    text-decoration:none;
+    color:$main-black;
+  }
 
   button {
     background:none;
@@ -36,6 +42,10 @@
         transform:translateY(-.5rem);
       }
 
+      .efeito-stories.active {
+        transform:none;
+      }
+
       span {
         transition:.3s;
         opacity:.7;
@@ -43,15 +53,24 @@
     }
   }
 
-  .efeito-stories {
+  .efeito-stories.federer, .efeito-stories.guga, .efeito-stories.nadal {
     padding:.2rem;
-    background-image:linear-gradient(310deg, rgba(242, 75, 40, 1) 0%, rgba(39, 39, 39, .8) 60%, rgba(242, 75, 40, 1) 80%);
+    background:linear-gradient(310deg, rgba(242, 75, 40, 1) 0%, rgba(39, 39, 39, .8) 60%, rgba(242, 75, 40, 1) 80%);
     background-size:300% 100%;
     border-radius:50%;
     display:grid;
     place-items:center;
     transition:.3s;
     animation:hide-loading .3s linear forwards;
+  }
+
+  .efeito-stories.federer.active, .efeito-stories.guga.active, .efeito-stories.nadal.active {
+    animation:show-loading .6s linear forwards;
+  }
+
+  .efeito-stories.federer.visualizado, .efeito-stories.guga.visualizado, .efeito-stories.nadal.visualizado {
+    animation:hide-loading .6s linear forwards;
+    background:rgba(39,39,39,.2);
   }
 
   span {
