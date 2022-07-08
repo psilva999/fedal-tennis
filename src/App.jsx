@@ -24,15 +24,23 @@ import { barraDeProgresso } from './Components/Events/barraDeProgresso'
 
 import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
-import { federerContent } from './Components/Events/tennisPlayerContent'
+import { federerContent, gugaContent, nadalContent } from './Components/Events/tennisPlayerContent'
 
 function App() {
   marcaTexto()
   window.addEventListener('click', closeMenuFromOutside)
   
-  window.addEventListener('load', () => { 
-    federerContent()
+  window.addEventListener('load', () => {
     voltaProTopo()
+    
+    if (document.querySelector('.totalTitulos.federer')) 
+      federerContent()
+
+    if (document.querySelector('.totalTitulos.guga'))
+      gugaContent()
+
+    if (document.querySelector('.totalTitulos.nadal')) 
+      nadalContent()
   })
 
   window.addEventListener('scroll', () => { 
