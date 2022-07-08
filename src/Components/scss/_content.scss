@@ -18,15 +18,6 @@
   box-shadow:$sombra-discreta;
   animation:show-page-content 1.2s linear forwards;
 
-  .tenista-fgn {
-    display:none;
-  }
-
-  .tenista-fgn.active {
-    display:block;
-    width:60rem;
-  }
-
   .data-quote-container {
     background:$amanhecer;
     color:$main-white-background;
@@ -43,6 +34,7 @@
     justify-content:center;
     align-items:top;
     gap:5rem;
+    animation:to-right .6s linear forwards;
 
     h1 {
       justify-self:center;
@@ -100,6 +92,7 @@
   p {
     font-size:1.2rem;
     line-height:1.8rem;
+    animation:to-right .9s linear forwards;
 
     .background-detail {
       margin-left:.3rem;

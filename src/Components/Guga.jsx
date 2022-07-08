@@ -15,12 +15,12 @@ const Guga = () => {
 
         <nav>
           <ul className='data-quote-container grand-slams'>
-            <li className='totalGrandSlams guga'></li>
+            <li className='totalGrandSlams guga'>03</li>
             <li>GRAND SLAMS</li>  
           </ul> 
 
           <ul className='data-quote-container titulos'>
-            <li className='totalTitulos guga'></li>
+            <li className='totalTitulos guga'>20</li>
             <li>TÍTULOS</li>  
           </ul> 
         </nav>   

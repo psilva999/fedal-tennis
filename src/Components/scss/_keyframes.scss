@@ -236,6 +236,18 @@
   }
 }
 
+@keyframes to-right {
+  from {
+    transform:translateX(-1rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
 @keyframes mostra-container {
   from {
     transform:translateY(-1rem);

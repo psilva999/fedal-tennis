@@ -1,32 +1,38 @@
+import { contaConquistas } from "./contaConquistas"
+import { mostraConquistas } from "./mostraDados"
+
 export function federerContent() {
-const efeitoStoriesFederer = document.querySelector('.efeito-stories.federer'),
-      buttonFederer = document.querySelector(".button-federer")
-  
+  const efeitoStoriesFederer = document.querySelector('.efeito-stories.federer'),
+        buttonFederer = document.querySelector(".button-federer")
+
   if (!efeitoStoriesFederer.classList.contains('active')) {
     reiniciaStories(
-      document.querySelector('.efeito-stories.guga'), 
-      document.querySelector('.button-guga'),
+    document.querySelector('.efeito-stories.guga'), 
+    document.querySelector('.button-guga'),
 
-      document.querySelector('.efeito-stories.nadal'), 
-      document.querySelector('.button-nadal'))
+    document.querySelector('.efeito-stories.nadal'), 
+    document.querySelector('.button-nadal'))
 
     efeitoStoriesFederer.classList.add('active')
     buttonFederer.disabled = true
     buttonFederer.style.cursor = 'initial'
 
     storieVisualizado(efeitoStoriesFederer)
+    contaConquistas()
   }
+
+  mostraConquistas()
 }
 
 export function gugaContent() {
   const efeitoStoriesGuga = document.querySelector('.efeito-stories.guga'),
         buttonGuga = document.querySelector('.button-guga')
-
+  
   if (!efeitoStoriesGuga.classList.contains('active')) {
     reiniciaStories(
       document.querySelector('.efeito-stories.federer'),
       document.querySelector(".button-federer"),
- 
+
       document.querySelector('.efeito-stories.nadal'), 
       document.querySelector('.button-nadal'))
     
@@ -35,7 +41,10 @@ export function gugaContent() {
     buttonGuga.style.cursor = 'initial'
 
     storieVisualizado(efeitoStoriesGuga)
+    contaConquistas()
   }
+
+  mostraConquistas()
 }
 
 export function nadalContent() {
@@ -55,7 +64,10 @@ export function nadalContent() {
     buttonNadal.style.cursor = 'initial'
 
     storieVisualizado(efeitoStoriesNadal)
+    contaConquistas()
   }
+
+  mostraConquistas()
 }
 
 function reiniciaStories(efeitoStories1, button1, efeitoStories2, button2) {

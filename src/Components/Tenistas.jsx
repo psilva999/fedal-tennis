@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Navigate } from "react-router-dom"
-
+import { Link } from "react-router-dom"
 import { federerContent, gugaContent, nadalContent } from './Events/tennisPlayerContent.js'
 
 import FedererImg from '../Assets/images/federer/0-federer.png'
@@ -10,35 +9,32 @@ import NadalImg from '../Assets/images/nadal/0-nadal.png'
 const Tenistas = () => {
   return (
 
-    <Router>
-      <section className='tenistas active'>
+    <section className='tenistas active'>
+      <Link to='/federer' className='no-style'>
+        <button onClick={ federerContent } className='button-federer'>
+          <div className='efeito-stories federer'>
+            <img src={ FedererImg }/> </div>
+          <span>Federer</span>
+        </button>
+      </Link>
 
-        <Link to='/federer' className='no-style'>
-          <button onClick={ federerContent } className='button-federer'>
-            <div className='efeito-stories federer'>
-              <img src={ FedererImg }/> </div>
-            <span>Federer</span>
-          </button>
-        </Link>
+      <Link to='/guga' className='no-style'>
+        <button onClick={ gugaContent } className='button-guga'>
+          <div className='efeito-stories guga'>
+            <img src={ GugaImg }/> </div>
+          <span>Guga</span>
+        </button>
+      </Link>
 
-        <Link to='/guga' className='no-style'>
-          <button onClick={ gugaContent } className='button-guga'>
-            <div className='efeito-stories guga'>
-              <img src={ GugaImg }/> </div>
-            <span>Guga</span>
-          </button>
-        </Link>
-
-        <Link to='/nadal' className='no-style'>
-          <button onClick={ nadalContent } className='button-nadal'>
-            <div className='efeito-stories nadal'>
-              <img src={ NadalImg }/> </div>
-            <span>Nadal</span>
-          </button>
-        </Link>
-      
-      </section>
-    </Router>
+      <Link to='/nadal' className='no-style'>
+        <button onClick={ nadalContent } className='button-nadal'>
+          <div className='efeito-stories nadal'>
+            <img src={ NadalImg }/> </div>
+          <span>Nadal</span>
+        </button>
+      </Link>
+    </section>
+    
   )
 }
 
