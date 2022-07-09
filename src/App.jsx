@@ -11,9 +11,10 @@ import Federer from './Components/Federer'
 import Guga from './Components/Guga'
 import Nadal from './Components/Nadal'
 
+import Produto from './Components/Produto'
 import VoltaProTopo from './Assets/svg/2-volta-topo.svg'
 
-import Produto from './Components/Produto'
+import LineWay from './Components/LineWay'
 import Footer from './Components/Footer'
 
 import { marcaTexto } from './Components/Events/marcaTexto'
@@ -66,8 +67,10 @@ function App() {
             <Route path='/' element={ <Content/> }>
               <Route path="/" element={ <Federer/> }/>
               <Route path="federer" element={ <Federer/> }/>
+
               <Route path='guga' element={ <Guga/> }/>
               <Route path='nadal' element={ <Nadal/> }/>
+              <Route path='*' element={ <LineWay/> }/>
             </Route>
 
           </Routes>

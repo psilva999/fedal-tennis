@@ -1,0 +1,41 @@
+@import 'config';
+
+.line-way {
+  display:grid;
+  width:100%;
+  place-items:center;
+  gap:2rem;
+  
+  .out {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    h1 {
+      font-size:2.5rem !important;
+    }
+
+    img {
+      opacity:1;
+      transform:rotate(-24deg);
+      margin-left:0rem;
+    }
+  }
+
+  a {
+    text-decoration:underline;
+    color:$main-black;
+    font-size:1.2rem;
+    opacity:.6;
+    transition:all ease-in .3s;
+
+    &:hover {
+      opacity:1;
+      text-decoration:none;
+    }
+  }
+
+  #animation {
+    width:15rem;
+  }
+}
