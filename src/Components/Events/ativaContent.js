@@ -4,9 +4,12 @@ export function ativaContent() {
   const buttonProduto = document.querySelector('.go-produto')
 
   if (buttonProduto.classList.contains('active')) {
-    buttonProduto.classList.remove('active')
-    document.querySelector('.tenistas').classList.add('active')
     window.scrollTo(0,0)
+    buttonProduto.classList.remove('active')
+    
+    document.querySelector('.tenistas').classList.add('active')
+    document.querySelector('.go-content').classList.add('active')
+    document.querySelector('.detail').classList.remove("off")
     
     federerContent()
   }

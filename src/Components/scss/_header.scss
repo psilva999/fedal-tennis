@@ -98,6 +98,11 @@
     color:$main-black;
     animation:show-menu .3s forwards;
 
+    .no-style {
+      color:$main-black;
+      text-decoration:none;
+    }
+
     li:nth-child(1) {
       opacity:1;
       cursor:initial;
@@ -111,6 +116,36 @@
         margin-top:1.2rem;
         margin-left:-1rem;
         opacity:1;
+      }
+
+      &.off {
+        opacity:.8;
+        transition:.3s;
+        cursor:pointer;
+      }
+
+      &.off::after {
+        content:'';
+        position:absolute;
+        background:$main-black;
+        margin-top:1.2rem;
+        margin-left:-1rem;
+        animation:hide-detail .3s forwards;
+      }
+
+      &.off:hover {
+        opacity: 1;
+        transition: .3s;
+
+        &:after {
+          content: '';
+          position: absolute;
+          background: $main-black;
+          height:1px;
+          margin-top: 1.2rem;
+          margin-left: -1rem;
+          animation: show-detail .3s forwards;
+        }
       }
     }
 

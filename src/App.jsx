@@ -11,6 +11,7 @@ import Federer from './Components/Federer'
 import Guga from './Components/Guga'
 import Nadal from './Components/Nadal'
 
+import Tenistas from './Components/Tenistas'
 import Produto from './Components/Produto'
 import VoltaProTopo from './Assets/svg/2-volta-topo.svg'
 
@@ -25,12 +26,41 @@ import { barraDeProgresso } from './Components/Events/barraDeProgresso'
 
 import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
+
 import { federerContent, gugaContent, nadalContent } from './Components/Events/tennisPlayerContent'
-import Tenistas from './Components/Tenistas'
 
 function App() {
   marcaTexto()
   window.addEventListener('click', closeMenuFromOutside)
+
+  window.addEventListener('popstate', () => {
+    //navegador 1 x 0 programador junior
+    window.location.href = 'https://psilva999.github.io/fedal-tennis/'
+
+    const buttonProduto = document.querySelector('.go-produto')
+    window.scrollTo(0,0)
+
+    if (buttonProduto.classList.contains('active')) {
+      buttonProduto.classList.remove('active')
+      document.querySelector('.tenistas').classList.add('active')
+
+      if (document.querySelector('.totalTitulos.federer')) 
+        federerContent()
+
+      if (document.querySelector('.totalTitulos.guga'))
+        gugaContent()
+
+      if (document.querySelector('.totalTitulos.nadal')) 
+        nadalContent()
+    }
+
+    else {
+      const buttonProduto = document.querySelector('.go-produto')
+
+      buttonProduto.classList.add('active')
+      document.querySelector('.tenistas').classList.remove('active')
+    }
+  })
   
   window.addEventListener('load', () => {
     voltaProTopo()
