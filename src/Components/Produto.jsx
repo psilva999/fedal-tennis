@@ -13,12 +13,14 @@ const Produto = () => {
 
   return (
     <>
-      <Racket/>
+      <section className='produto active'>
+        <Racket/>
 
-      <Oferta/>
-      <OutrasOfertas/>
+        <Oferta/>
+        <OutrasOfertas/>
 
-      <Descricao/>
+        <Descricao/>
+      </section>
     </>
   )
 }

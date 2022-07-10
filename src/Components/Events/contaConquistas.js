@@ -1,7 +1,4 @@
 export function contaConquistas() {
-  const totalGrandSlams = document.querySelector('.totalGrandSlams'),
-        totalTitulos = document.querySelector('.totalTitulos')
-
   let mostraNumeros = setInterval(acrescentaNumeros, 720),
       tempo = 2,
 
@@ -42,8 +39,6 @@ export function contaConquistas() {
       clearInterval(acrescentaTitulos)
       clearInterval(mostraNumeros)
     }
-
-    console.log(tempo)
   }
 
   function grandSlamsDosTenistas() {

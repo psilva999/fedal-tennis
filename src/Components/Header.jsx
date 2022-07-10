@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Logo from '../Assets/svg/0-logo.svg'
 import Store from '../Assets/svg/1-buy.svg'
 
-import { handleMenu } from './Events/handleMenu.js'
 import { darkAndWhiteMode } from './Events/darkAndWhiteMode.js'
+import { handleMenu } from './Events/handleMenu.js'
+
+import { ativaProduto } from './Events/ativaProduto.js'
+import { ativaContent } from './Events/ativaContent'
 
 const Header = () => {
-
+  
   return (
     <header className='header-fixo'>
 
@@ -31,9 +35,16 @@ const Header = () => {
         </ul>
       </nav>
 
-      <img src={ Logo } className='logo'/>
+      <Link to='/' className='no-style'>
+        <button onClick={ ativaContent } className='go-content'>
+          <img src={ Logo } className='logo'/></button>
+      </Link>
 
-      <img src={ Store } className='store'/>
+      <Link to='/produto' className='no-style'>
+        <button onClick={ ativaProduto } className='go-produto'> 
+          <img src={ Store } className='store'/>
+        </button>
+      </Link>
     </header>
   )
 }

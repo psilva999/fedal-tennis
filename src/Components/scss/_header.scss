@@ -10,7 +10,7 @@
   z-index:3;
   border-radius:0 0 1.3rem 0;
   box-shadow:$baixo-divisor;
-  padding:.3rem 2rem .2rem 2rem;
+  padding:.3rem 2rem 0rem 2rem;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -38,6 +38,7 @@
   .toggle-menu {
     height:2rem;
     background:none;
+    margin-top:-.2rem;
 
     div {
       background:$toggle-menu-gradient;
@@ -223,16 +224,31 @@
     height:2.7rem;
   }
 
-  .store {
-    height:1.7rem;
+  button {
+    background:none;
+  }
+
+  .go-content {
+    cursor:pointer;
+  }
+
+  .go-produto {
     margin-top:-.2rem;
     opacity:.8;
     transition:.3s;
-
+    
     &:hover {
       opacity:1;
       transition:.3s;
     }
+  }
+
+  .go-produto.active {
+    opacity:1;
+  }
+
+  .store {
+    height:1.7rem;
   }
 }
 

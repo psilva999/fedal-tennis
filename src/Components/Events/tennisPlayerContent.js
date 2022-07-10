@@ -12,7 +12,7 @@ export function federerContent() {
 
     document.querySelector('.efeito-stories.nadal'), 
     document.querySelector('.button-nadal'))
-
+    
     efeitoStoriesFederer.classList.add('active')
     buttonFederer.disabled = true
     buttonFederer.style.cursor = 'initial'

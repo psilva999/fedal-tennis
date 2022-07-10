@@ -26,6 +26,7 @@ import { barraDeProgresso } from './Components/Events/barraDeProgresso'
 import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
 import { federerContent, gugaContent, nadalContent } from './Components/Events/tennisPlayerContent'
+import Tenistas from './Components/Tenistas'
 
 function App() {
   marcaTexto()
@@ -34,34 +35,40 @@ function App() {
   window.addEventListener('load', () => {
     voltaProTopo()
     
-    if (document.querySelector('.totalTitulos.federer')) 
-      federerContent()
+    if (document.querySelector('.content.active')) {  
+      if (document.querySelector('.totalTitulos.federer')) 
+        federerContent()
 
-    if (document.querySelector('.totalTitulos.guga'))
-      gugaContent()
+      if (document.querySelector('.totalTitulos.guga'))
+        gugaContent()
 
-    if (document.querySelector('.totalTitulos.nadal')) 
-      nadalContent()
+      if (document.querySelector('.totalTitulos.nadal')) 
+        nadalContent()
+    }
   })
 
   window.addEventListener('scroll', () => { 
     barraDeProgresso()
-    marcaTexto()
-
-    escreveFrase()
-    mostraFatos()
     voltaProTopo()
+
+    if (document.querySelector('.content.active')) {
+      marcaTexto()
+
+      escreveFrase()
+      mostraFatos()
+    }
   })
 
   return (
     <>
       <div className='linha-de-leitura'></div>
-      <div className='top'></div>
+      <div className='top' id='top-teste'></div>
 
-      <Header/>
       <main>
-
         <Router>
+          <Header/>
+        
+          <Tenistas/>
           <Routes>
 
             <Route path='/' element={ <Content/> }>
@@ -70,15 +77,14 @@ function App() {
 
               <Route path='guga' element={ <Guga/> }/>
               <Route path='nadal' element={ <Nadal/> }/>
+        
               <Route path='*' element={ <LineWay/> }/>
             </Route>
 
+            <Route path='produto' element={ <Produto/> }/>
           </Routes>
-        </Router>
 
-        <section className='produto'>
-          {/* <Produto/> */}
-        </section>
+        </Router>
       </main>
 
       <Link activeClass="active"

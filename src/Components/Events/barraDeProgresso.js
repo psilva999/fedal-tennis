@@ -4,7 +4,7 @@ export function barraDeProgresso() {
 
   moveIndicadorDeScroll()
   function moveIndicadorDeScroll() {
-    let porcentagem = ((window.scrollY) / maxHeight) * 100
+    let porcentagem = ((window.pageYOffset) / maxHeight) * 100
 
     indicadorDeScroll.style.width = `${porcentagem}vw`
   }
