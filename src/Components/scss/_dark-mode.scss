@@ -1,0 +1,132 @@
+@import 'config';
+
+body.dark-mode {
+  background:$dark-body;
+
+  .header-fixo {
+    background:$dark-header;
+    box-shadow:$branco-sutil;
+  }
+
+  .toggle-menu {
+    div {
+      background:$dark-toggle-menu-gradient;
+
+      &:after {
+        background:$dark-toggle-menu-gradient;
+      }
+    }
+  }
+
+  .tenistas.active {
+    background:$main-black-gradient;
+    
+    span {
+      color:$main-white-background  !important;
+      font-weight:lighter;
+      opacity:.7;
+    }
+
+    .efeito-stories.federer.visualizado,
+    .efeito-stories.guga.visualizado,
+    .efeito-stories.nadal.visualizado {
+      animation: hide-loading .6s linear forwards;
+      background: rgba(226, 226, 226, .6);
+    }
+
+    button:hover {
+      span {
+        opacity:.7;
+      }
+    }
+  }
+
+  .content.active, .produto.active {
+    background-image:$dark-container;
+    color:$main-white-background;
+    background-repeat:no-repeat;
+  }
+
+  .content.active {
+    .data-quote-container {
+      box-shadow:$nevoa-exuberante;
+    }
+
+    header {
+      h1 {
+        background:$dark-main-title-content;
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+      }
+    }
+
+    .historia {
+      h1 {
+        opacity:.7;
+      }
+    }
+  }
+
+  .produto.active {
+    .oferta, .outras-ofertas {
+      background:$dark-ofertas;
+    }
+
+    .oferta {
+      .quantidade {
+        button {
+          color:$main-white-background;
+        }
+      }
+
+      .preco {
+        h1 {
+          span {
+            background:$dark-green-to-left;
+            background-clip:text;
+            -webkit-text-fill-color:transparent;
+          }
+        }
+      }
+
+      .garantias {
+        .color-effect {
+          background:$dark-green-to-right;
+          background-clip:text;
+          -webkit-text-fill-color:transparent;
+        }
+
+        &:before {
+          background: $main-white-background;
+        }
+
+      }
+    }
+
+    .outras-ofertas {
+      div:first-child {
+        span {
+          background:$dark-green-to-right;
+          background-clip:text;
+          -webkit-text-fill-color:transparent;
+        }
+      }
+    }
+
+    .descricao {
+      &:before {
+        background:$main-white-background;
+      }
+    }
+  }
+
+  .recomendacoes {
+    #divisor {
+      background:$main-white-background;
+    }
+
+    img {
+      background:$nevoa-do-corpo;
+    }
+  }
+}

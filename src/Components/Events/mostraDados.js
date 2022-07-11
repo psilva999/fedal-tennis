@@ -5,11 +5,23 @@ export function mostraConquistas() {
   function countdownConquistas() {
     tempo--
 
-    if (tempo === 1) 
-      document.querySelector('.grand-slams').style.animation = 'mostra-conquistas .6s linear forwards'
+    if (tempo === 1) {
+      if (!document.body.classList.contains('dark-mode'))
+        document.querySelector('.grand-slams').style.animation = 'mostra-conquistas .6s linear forwards'
+
+      else 
+        document.querySelector('.grand-slams').style.animation = 'dark-mostra-conquistas .6s linear forwards'
+    }
 
     else if (tempo === 0) {
-      document.querySelector('.titulos').style.animation = 'mostra-conquistas .6s linear forwards'
+      if (!document.body.classList.contains('dark-mode')) {
+        document.querySelector('.titulos').style.animation = 'mostra-conquistas .6s linear forwards'
+      }
+
+      else {
+        document.querySelector('.titulos').style.animation = 'dark-mostra-conquistas .6s linear forwards'
+      }
+
       clearInterval(mostraConquistas)
     }
 

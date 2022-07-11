@@ -49,6 +49,7 @@
     span {
       font-style:italic;
       opacity:.7;
+      font-size:1rem;
     }
 
     nav {
@@ -62,8 +63,12 @@
       gap:.5rem;
       height:7.5rem;
       align-items:center;
-      box-shadow:none;
       opacity:0;
+
+      .dark {
+        box-shadow:$nevoa-exuberante;
+        animation:mostra-nevoa 0s forwards;
+      }
     }
 
     li {

@@ -63,7 +63,7 @@ const Oferta = () => {
           Quantidade: 
           <button>
             1 unidade 
-            <img src={ Seta } alt='seta'/>  
+            <img src={ Seta } alt='seta' className='seta'/>  
           </button>
         </div>
 
