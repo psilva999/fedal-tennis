@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { federerContent, gugaContent, nadalContent } from './Events/tennisPlayerContent.js'
 
 import FedererImg from '../Assets/images/federer/0-federer.png'
 import GugaImg from '../Assets/images/guga/0-guga.png'
 import NadalImg from '../Assets/images/nadal/0-nadal.png'
+
+import { federerContent, gugaContent, nadalContent } from './Events/tennisPlayerContent'
 
 const Tenistas = () => {
   return (

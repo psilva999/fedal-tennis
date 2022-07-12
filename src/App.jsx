@@ -28,6 +28,7 @@ import { voltaProTopo } from './Components/Events/voltaProTopo'
 import { closeMenuFromOutside } from './Components/Events/handleMenu'
 
 import { federerContent, gugaContent, nadalContent } from './Components/Events/tennisPlayerContent'
+import { localStorageFedal } from './Components/Events/darkAndWhiteMode'
 
 function App() {
   marcaTexto()
@@ -64,7 +65,8 @@ function App() {
   
   window.addEventListener('load', () => {
     voltaProTopo()
-    
+    localStorageFedal()
+
     if (document.querySelector('.content.active')) {  
       if (document.querySelector('.totalTitulos.federer')) 
         federerContent()
@@ -96,11 +98,11 @@ function App() {
 
       <main>
         <Router>
+          
           <Header/>
-        
           <Tenistas/>
-          <Routes>
 
+          <Routes>
             <Route path='/' element={ <Content/> }>
               <Route path="/" element={ <Federer/> }/>
               <Route path="federer" element={ <Federer/> }/>

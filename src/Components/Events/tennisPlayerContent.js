@@ -56,7 +56,7 @@ export function nadalContent() {
       document.querySelector('.efeito-stories.federer'),
       document.querySelector(".button-federer"),
 
-      document.querySelector('.efeito-stories.guga'), 
+      document.querySelector('.efeito-stories.guga'),
       document.querySelector('.button-guga'))
 
     efeitoStoriesNadal.classList.add('active')

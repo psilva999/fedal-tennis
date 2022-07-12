@@ -191,12 +191,22 @@
           font-size:1rem;
           background:transparent;
           cursor:pointer;
+          display:flex;
           color:$main-black;
 
           img {
             margin-left:.3rem;
+            margin-top:.3rem;
             width:.7rem;
             opacity:.8;
+          }
+
+          .dark-seta {
+            display:none;
+          }
+
+          .white-seta {
+            display:block;
           }
         }
 

@@ -64,11 +64,7 @@
       height:7.5rem;
       align-items:center;
       opacity:0;
-
-      .dark {
-        box-shadow:$nevoa-exuberante;
-        animation:mostra-nevoa 0s forwards;
-      }
+      box-shadow:$sombra-exuberante !important;
     }
 
     li {

@@ -5,6 +5,8 @@ import Avaliacao from '../../Assets/svg/store/1-avaliacao.svg'
 import CreditCard from '../../Assets/svg/store/2-credit.svg'
 
 import Seta from '../../Assets/svg/store/3-seta.svg'
+import DarkSeta from '../../Assets/svg/store/3-dark-seta.svg'
+
 import Reply from '../../Assets/svg/store/4-reply.svg'
 import Verified from '../../Assets/svg/store/5-verified.svg'
 
@@ -63,7 +65,8 @@ const Oferta = () => {
           Quantidade: 
           <button>
             1 unidade 
-            <img src={ Seta } alt='seta' className='seta'/>  
+            <img src={ Seta } alt='seta' className='white-seta'/>
+            <img src={ DarkSeta } alt='dark-seta' className='dark-seta'/>  
           </button>
         </div>
 

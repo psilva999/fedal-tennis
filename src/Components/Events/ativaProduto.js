@@ -7,6 +7,5 @@ export function ativaProduto() {
 
     document.querySelector('.tenistas').classList.remove('active')
     document.querySelector('.go-content').classList.remove('active')
-    document.querySelector('.detail').classList.add("off")
   }
 }
