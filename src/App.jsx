@@ -32,6 +32,11 @@ import { localStorageFedal } from './Components/Events/darkAndWhiteMode'
 
 function App() {
   marcaTexto()
+  if (document.querySelector('.content.active')) { 
+    if (document.querySelector('.totalTitulos.federer')) 
+      federerContent()
+  }
+
   window.addEventListener('click', closeMenuFromOutside)
 
   window.addEventListener('popstate', () => {
@@ -103,17 +108,17 @@ function App() {
           <Tenistas/>
 
           <Routes>
-            <Route path='/' element={ <Content/> }>
-              <Route path="/" element={ <Federer/> }/>
-              <Route path="federer" element={ <Federer/> }/>
+            <Route path='/fedal-tennis' element={ <Content/> }>
+              <Route path="/fedal-tennis" element={ <Federer/> }/>
+              <Route path="/fedal-tennis/federer" element={ <Federer/> }/>
 
-              <Route path='guga' element={ <Guga/> }/>
-              <Route path='nadal' element={ <Nadal/> }/>
+              <Route path='/fedal-tennis/guga' element={ <Guga/> }/>
+              <Route path='/fedal-tennis/nadal' element={ <Nadal/> }/>
         
               <Route path='*' element={ <LineWay/> }/>
             </Route>
 
-            <Route path='produto' element={ <Produto/> }/>
+            <Route path='/fedal-tennis/produto' element={ <Produto/> }/>
           </Routes>
 
         </Router>

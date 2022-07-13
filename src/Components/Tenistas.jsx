@@ -11,7 +11,7 @@ const Tenistas = () => {
   return (
 
     <section className='tenistas active'>
-      <Link to='/federer' className='no-style'>
+      <Link to='/fedal-tennis/federer' className='no-style'>
         <button onClick={ federerContent } className='button-federer'>
           <div className='efeito-stories federer'>
             <img src={ FedererImg }/> </div>
@@ -19,7 +19,7 @@ const Tenistas = () => {
         </button>
       </Link>
 
-      <Link to='/guga' className='no-style'>
+      <Link to='/fedal-tennis/guga' className='no-style'>
         <button onClick={ gugaContent } className='button-guga'>
           <div className='efeito-stories guga'>
             <img src={ GugaImg }/> </div>
@@ -27,7 +27,7 @@ const Tenistas = () => {
         </button>
       </Link>
 
-      <Link to='/nadal' className='no-style'>
+      <Link to='/fedal-tennis/nadal' className='no-style'>
         <button onClick={ nadalContent } className='button-nadal'>
           <div className='efeito-stories nadal'>
             <img src={ NadalImg }/> </div>

@@ -22,7 +22,7 @@ const Header = () => {
         </button>  
 
         <ul className='menu' id='menu'>
-          <Link to='/' className='no-style'>
+          <Link to='/fedal-tennis' className='no-style'>
             <li onClick={ ativaContent } className='detail'>home</li>
           </Link>
 
@@ -38,12 +38,12 @@ const Header = () => {
         </ul>
       </nav>
 
-      <Link to='/' className='no-style'>
+      <Link to='/fedal-tennis' className='no-style'>
         <button onClick={ ativaContent } className='go-content active'>
           <img src={ Logo } className='logo'/></button>
       </Link>
 
-      <Link to='/produto' className='no-style'>
+      <Link to='/fedal-tennis/produto' className='no-style'>
         <button onClick={ ativaProduto } className='go-produto'> 
           <img src={ Store } className='store'/>
         </button>
