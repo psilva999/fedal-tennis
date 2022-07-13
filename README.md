@@ -67,7 +67,7 @@ ___
 ### `/'/'.
 
 -Utilizei do git-hub-page para criar a página do site.
-* [Link do tutorial](https://www.youtube.com/watch?v=2hM5viLMJpA)
+* [Link do tutorial](https://www.youtube.com/watch?v=yo2bMGnIKE8)
 ___
 Sei que tá demorando mas estou no caminho certo
 > “There’s a lot of good waiting for you on the other side of tired. Get yourself tired..”
